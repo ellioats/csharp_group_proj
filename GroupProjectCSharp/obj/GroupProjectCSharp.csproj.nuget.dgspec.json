@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\GroupProjectCSharp.csproj": {}
+    "C:\\Users\\hamma\\source\\repos\\csharp_group_proj_latest\\GroupProjectCSharp\\GroupProjectCSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\GroupProjectCSharp.csproj": {
+    "C:\\Users\\hamma\\source\\repos\\csharp_group_proj_latest\\GroupProjectCSharp\\GroupProjectCSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
+        "projectUniqueName": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj_latest\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
         "projectName": "GroupProjectCSharp",
-        "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
-        "packagesPath": "C:\\Users\\emwcu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\obj\\",
+        "projectPath": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj_latest\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
+        "packagesPath": "C:\\Users\\hamma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj_latest\\GroupProjectCSharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\emwcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,12 +42,19 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "MvvmLightLibs": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -68,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
