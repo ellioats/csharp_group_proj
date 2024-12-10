@@ -45,8 +45,7 @@
               "ToolTip": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\MainWindow.xaml",
               "RelativeToolTip": "GroupProjectCSharp\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-27T18:31:28.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T18:31:28.877Z"
             },
             {
               "$type": "Document",
@@ -58,8 +57,7 @@
               "RelativeToolTip": "GroupProjectCSharp\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAowC4AAAB9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T18:31:26.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T18:31:26.389Z"
             },
             {
               "$type": "Document",
@@ -84,21 +82,19 @@
               "RelativeToolTip": "GroupProjectCSharp\\Highlander.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T02:21:08.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T02:21:08.297Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GroupProjectCSharp",
+              "Title": "GroupProjectCSharp.csproj",
               "DocumentMoniker": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
               "RelativeDocumentMoniker": "GroupProjectCSharp\\GroupProjectCSharp.csproj",
               "ToolTip": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
               "RelativeToolTip": "GroupProjectCSharp\\GroupProjectCSharp.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-10T20:33:03.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T20:33:03.834Z"
             }
           ]
         }

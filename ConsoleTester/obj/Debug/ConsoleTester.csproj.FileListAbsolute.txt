@@ -1,0 +1,10 @@
+C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\bin\Debug\ConsoleTester.exe.config
+C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\bin\Debug\ConsoleTester.exe
+C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\bin\Debug\ConsoleTester.pdb
+C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\bin\Debug\Simulation.dll
+C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\bin\Debug\Simulation.pdb
+C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\obj\Debug\ConsoleTester.csproj.AssemblyReference.cache
+C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\obj\Debug\ConsoleTester.csproj.CoreCompileInputs.cache
+C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\obj\Debug\ConsoleT.2B196E7D.Up2Date
+C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\obj\Debug\ConsoleTester.exe
+C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\obj\Debug\ConsoleTester.pdb
