@@ -35,7 +35,7 @@ namespace GroupProjectCSharp
                 ["", "", "", "", "", ""] 
             };
 
-            int CurrentPlayerX = 2;
+            int CurrentPlayerX = 1;
             int CurrentPlayerY = 2;
 
             Boolean ?isEvil = null;
