@@ -32,7 +32,11 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj": {
+                "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -70,6 +74,21 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj",
+        "projectName": "HighlanderMovements",
+        "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

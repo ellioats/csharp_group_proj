@@ -1,11 +1,29 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "HighlanderMovements/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HighlanderMovements.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HighlanderMovements.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "HighlanderMovements/1.0.0": {
+      "type": "project",
+      "path": "../HighlanderMovements/HighlanderMovements.csproj",
+      "msbuildProject": "../HighlanderMovements/HighlanderMovements.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0-windows7.0": [
+      "HighlanderMovements >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\emwcu\\.nuget\\packages\\": {},
@@ -39,7 +57,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj": {
+              "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
