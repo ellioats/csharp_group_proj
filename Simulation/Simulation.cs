@@ -116,6 +116,14 @@ namespace Simulation
             return (highlander.X, highlander.Y);
         }
 
+        public Highlander GetHighlander(int index)
+        {
+            if (index < 0 || index >= highlanders.Count)
+                throw new ArgumentOutOfRangeException(nameof(index));
+
+            return highlanders[index];
+        }
+
         public bool AreAllBadHighlandersDefeated()
         {
             return highlanders.All(h => h.IsGood || !h.IsAlive);
