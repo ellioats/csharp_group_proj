@@ -82,15 +82,22 @@ namespace Game
         public void placePlayer(Highlander h)
         {
             Console.WriteLine("Place Player Method entered...");
+
+            Console.WriteLine("BEFORE PLAYER ADDED: Length of array: " + this.currentPlayers.Count());
+
+            Console.WriteLine("Player info: x: {0}, y: {1}...", h.X, h.Y);
+
             // checks if specified position is filled
-            if (this.grid[h.X, h.Y] != "")
+            if (this.grid[h.X, h.Y] != null)
             {
-                //Console.WriteLine("DEBUG: Position is filled, cannot place player...");
-                Console.WriteLine("Position is empty...");
+                Console.WriteLine("DEBUG: Position is filled, cannot place player...");
+                //Console.WriteLine("Position is empty...");
                 return;
             }
 
             this.grid[h.X, h.Y] = (h.IsGood) ? "Good" : "Evil";
+
+            Console.WriteLine("Testing contents of location [{0},{1}] = {2}", h.X, h.Y, grid[h.X, h.Y]);
             this.currentPlayers.Add(h);
             
         }
@@ -100,17 +107,22 @@ namespace Game
         /// </summary>
         public void gridUpdate()
         {
+
+            Console.WriteLine("Grid update method...");
+
             // validates location on grid for each highlander currently in list
             foreach (Highlander h in this.currentPlayers.ToList())
             {
+                Console.WriteLine("x: {0}, y: {1}...", h.X, h.Y);
                 if (this.grid[h.X, h.Y] == (h.IsGood ? "Good" : "Evil"))
                 {
                     Console.WriteLine("DEBUG: {0} Highlander is in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
                 } 
                 else
                 {
-                    Console.WriteLine("DEBUG: {0} Highlander is not in correct position on grid ({1}, {2}...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
-                    this.placePlayer(h);
+                    Console.WriteLine("DEBUG: {0} Highlander is not in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
+                    this.grid[h.prevX, h.prevY] = ""; // sets previous position as empty
+                    this.grid[h.X, h.Y] = (h.IsGood ? "Good" : "Evil");
                 }
             }
         }
