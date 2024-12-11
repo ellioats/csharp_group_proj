@@ -76,10 +76,10 @@ namespace Game
 
         public void printGrid()
         {
-            Console.WriteLine("Grid print");
+            //Console.WriteLine("Grid print");
 
-            Console.WriteLine("DEBUG: current length of outer is {0}", this.grid.GetLength(0));
-            Console.WriteLine("DEBUG: current length of inner is {0}", this.grid.GetLength(1));
+            //Console.WriteLine("DEBUG: current length of outer is {0}", this.grid.GetLength(0));
+            //Console.WriteLine("DEBUG: current length of inner is {0}", this.grid.GetLength(1));
 
             for (int i = 0; i < this.grid.GetLength(0); i++)
             {
@@ -96,11 +96,11 @@ namespace Game
 
         public void placePlayer(Highlander h)
         {
-            Console.WriteLine("Place Player Method entered...");
+            //Console.WriteLine("Place Player Method entered...");
 
-            Console.WriteLine("BEFORE PLAYER ADDED: Length of array: " + this.currentPlayers.Count());
+            //Console.WriteLine("BEFORE PLAYER ADDED: Length of array: " + this.currentPlayers.Count());
 
-            Console.WriteLine("Player info: x: {0}, y: {1}...", h.X, h.Y);
+            //Console.WriteLine("Player info: x: {0}, y: {1}...", h.X, h.Y);
 
             // checks if specified position is filled
             if (this.grid[h.X, h.Y] != null)
@@ -123,19 +123,19 @@ namespace Game
         public void gridUpdate()
         {
 
-            Console.WriteLine("Grid update method...");
+            //Console.WriteLine("Grid update method...");
 
             // validates location on grid for each highlander currently in list
             foreach (Highlander h in this.currentPlayers.ToList())
             {
-                Console.WriteLine("x: {0}, y: {1}...", h.X, h.Y);
+                //Console.WriteLine("x: {0}, y: {1}...", h.X, h.Y);
                 if (this.grid[h.X, h.Y] == (h.IsGood ? "Good" : "Evil"))
                 {
-                    Console.WriteLine("DEBUG: {0} Highlander is in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
+                    //Console.WriteLine("DEBUG: {0} Highlander is in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
                 } 
                 else
                 {
-                    Console.WriteLine("DEBUG: {0} Highlander is not in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
+                    //Console.WriteLine("DEBUG: {0} Highlander is not in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
                     this.grid[h.prevX, h.prevY] = ""; // sets previous position as empty
                     this.grid[h.X, h.Y] = (h.IsGood ? "Good" : "Evil");
                 }
@@ -154,14 +154,14 @@ namespace Game
 
         public void verbosePlayerPrint()
         {
-            Console.WriteLine("Current Highlander List\n");
+            //Console.WriteLine("Current Highlander List\n");
 
             foreach (Highlander h in this.currentPlayers)
             {
                 Console.WriteLine("{0} Highlander located at [{1},{2}]", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
             }
-
-            Console.WriteLine("List end ----");
+            Console.WriteLine();
+            //Console.WriteLine("List end ----");
         }
     }
 
