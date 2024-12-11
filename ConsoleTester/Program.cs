@@ -82,7 +82,7 @@ namespace ConsoleTester
 
             int CurrentPlayerX = 1;
             int CurrentPlayerY = 2;
-
+            
             List<HighlanderMovements.HighlanderInfo> info = HighlanderMovements.Class1.findAllNearbyHighlanders(ref area, CurrentPlayerX, CurrentPlayerY);
 
 

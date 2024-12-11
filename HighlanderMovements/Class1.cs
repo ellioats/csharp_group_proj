@@ -75,7 +75,13 @@ namespace HighlanderMovements
 
 
         }
-
+        /// <summary>
+        /// Method That returns the location and orientation (good/evil) of any highlander in a 3x3 area around the player
+        /// </summary>
+        /// <param name="area">the 2d array which represents the area</param>
+        /// <param name="playerCurrentX"><Player's current position on the X axis/param>
+        /// <param name="playerCurrentY">Player's current position on the Y axis</param>
+        /// <returns>A list of the HighLanderInfo struct, which contains coordinate and orientation (good/evil) info</returns>
         public static List<HighlanderInfo> findAllNearbyHighlanders(ref string[][] area, int playerCurrentX, int playerCurrentY)
         {
 
@@ -87,8 +93,6 @@ namespace HighlanderMovements
 
             List<HighlanderInfo> info = new List<HighlanderInfo>();
             
-
-
             for (int x = checkingCurrentPosX; x < (checkingBoundX + 1); x++)
             {
                 for (int y = checkingCurrentPosY; y < (checkingBoundY + 1); y++)
@@ -121,6 +125,8 @@ namespace HighlanderMovements
             }
                 return info;
         }
+
+
 
     }
 }
