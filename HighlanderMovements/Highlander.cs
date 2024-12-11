@@ -22,10 +22,21 @@ namespace HighlanderMovements
         public int X { get; private set; }
         public int Y { get; private set; }
 
+        public int prevX { get; private set; }
+        public int prevY { get; private set; }
+
+        private Boolean setPrevCoordPace = false;
+
         public Highlander(int startX, int startY, bool isGood)
         {
             X = startX;
             Y = startY;
+
+            prevX = startX;
+            prevY = startY;
+
+            
+
             IsGood = isGood;
         }
 
@@ -41,13 +52,57 @@ namespace HighlanderMovements
             if (Health < 0) Health = 0;
         }
 
-        public void MoveUp() => Y++;
-        public void MoveDown() => Y--;
-        public void MoveLeft() => X--;
-        public void MoveRight() => X++;
-        public void MoveDownRight() { X++; Y--; }
-        public void MoveDownLeft() { X--; Y--; }
-        public void MoveUpRight() { X++; Y++; }
-        public void MoveUpLeft() { X--; Y++; }
+        
+        private void OnMove()
+        {
+            if (this.setPrevCoordPace)
+            {
+                this.prevX = this.X;
+                this.prevY = this.Y;
+            }
+
+        }
+
+        public void MoveUp() {
+            OnMove();
+            Y++;
+            this.setPrevCoordPace = true;
+        }
+        public void MoveDown() { 
+            OnMove();
+            Y--; 
+            this.setPrevCoordPace = true;
+        }
+        public void MoveLeft() { 
+            OnMove();
+            X--;
+            this.setPrevCoordPace = true;
+        }
+
+        public void MoveRight() {
+            OnMove();
+            X++; 
+            this.setPrevCoordPace = true;
+        }
+        public void MoveDownRight() { 
+            OnMove();
+            X++; Y--; 
+            this.setPrevCoordPace = true;
+        }
+        public void MoveDownLeft() {
+            OnMove();
+            X--; Y--; 
+            this.setPrevCoordPace = true;
+        }
+        public void MoveUpRight() { 
+            OnMove();
+            X++; Y++;
+            this.setPrevCoordPace = true;
+        }
+        public void MoveUpLeft() { 
+            OnMove();
+            X--; Y++;
+            this.setPrevCoordPace = true;
+        }
     }
 }
