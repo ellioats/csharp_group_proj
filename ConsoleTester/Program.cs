@@ -72,11 +72,11 @@ namespace ConsoleTester
         static void HighlanderMovementsTest1()
         {
             string[][] area = {
-                new string[] {"", "8", "7", "6", "", ""},
+                new string[] {"", "8", "Good", "6", "", ""},
                 new string[] {"", "1", "P", "5", "", ""},
                 new string[] {"", "2", "3", "Evil", "", ""},
                 new string[] {"", "", "", "", "", ""},
-                new string[] {"", "", "", "", "", ""},
+                new string[] {"", "", "Good", "", "", ""},
                 new string[] {"", "", "", "", "", ""}
             };
 
@@ -90,7 +90,7 @@ namespace ConsoleTester
             {
                 foreach (HighlanderMovements.HighlanderInfo i in info)
                 {
-                    Console.WriteLine("{3} Highlander found at position {0}, {1}", i.xPos, i.yPos, (i.isEvil ? ""));
+                    Console.WriteLine("{0} Highlander found at position {1}, {2}", (i.isEvil ? "Evil" : "Good"), i.xPos, i.yPos);
                 }
             } else
             {
