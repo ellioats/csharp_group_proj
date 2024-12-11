@@ -162,8 +162,9 @@ namespace ConsoleTester
             Console.WriteLine("First Print: ");
             g.printGrid();
 
-            // new position should be 4,5
-            h1.MoveRight();
+            // new position should be 6,5
+            //h1.MoveRight();
+            h1.MoveDown();
 
             // update to reflect position changes
             g.gridUpdate();
