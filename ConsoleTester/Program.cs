@@ -16,7 +16,9 @@ namespace ConsoleTester
             //HighlanderMovementsTest1();
             //RandomMovementTest();
             //gridPlayerMovementTest();
-            gameLoopTest1();
+            //gameLoopTest1();
+            //moveRandomly10x();
+            moveRandomlyBoundsDetectionTest();
 
 
             Console.Read();
@@ -214,6 +216,71 @@ namespace ConsoleTester
             g.printGrid();
 
             g.verbosePlayerPrint();
+        }
+
+        static void moveRandomly10x()
+        {
+            List<Highlander> list = new List<Highlander>();
+            Grid g = new Grid(20, 20);
+            g.initGrid();
+
+            int[] player1Coords = g.getRandomXY();
+            int[] player2Coords = g.getRandomXY();
+
+            Highlander player1 = new Highlander(player1Coords[0], player1Coords[1], true);
+            Highlander player2 = new Highlander(player2Coords[0], player2Coords[1], true);
+
+            list.Add(player1);
+            list.Add(player2);
+
+            g.setPlayerList(list);
+            g.gridUpdate();
+
+            g.verbosePlayerPrint();
+
+            Console.WriteLine("Width: " + g.width);
+            Console.WriteLine("Height: " + g.height);
+
+
+            Console.WriteLine("Repeated Print started...");
+
+            // run 5 times, moving randomly and printing position each iteration
+            for (int x = 0; x < 5; x++)
+            {
+                player1.MoveRandomly(g.width, g.height);
+                player2.MoveRandomly(g.width, g.height);
+
+                g.gridUpdate();
+                g.verbosePlayerPrint();
+            }
+
+            Console.WriteLine("Repeated print ended...");
+        }
+
+        static void moveRandomlyBoundsDetectionTest()
+        {
+
+            Grid g = new Grid(20, 20);
+            g.initGrid();
+
+
+            Highlander player1 = new Highlander(0, 0, true);
+
+            g.placePlayer(player1);
+
+            g.gridUpdate();
+
+            g.verbosePlayerPrint();
+            
+
+            // run 5 times, moving randomly and printing position each iteration
+            for (int x = 0; x < 50; x++)
+            {
+            player1.MoveRandomly(g.width, g.height);
+            
+            g.gridUpdate();
+            g.verbosePlayerPrint();
+            }
         }
 
     }
