@@ -77,7 +77,7 @@ namespace GroupProjectCSharp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GroupProjectCSharp;V1.0.0.0;component/startpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GroupProjectCSharp;component/startpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\StartPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
