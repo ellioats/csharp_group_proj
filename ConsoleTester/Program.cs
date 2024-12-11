@@ -40,7 +40,7 @@ namespace ConsoleTester
                 for (int i = 0; i < simulation.HighlandersCount; i++)
                 {
                     var highlanderPosition = simulation.GetHighlanderPosition(i);
-                    var highlander = simulation.GetHighlanderi(i);
+                    var highlander = simulation.GetHighlander(i);
 
                     if (highlanderi.IsAlive && !highlanderi.IsGood)
                     {
