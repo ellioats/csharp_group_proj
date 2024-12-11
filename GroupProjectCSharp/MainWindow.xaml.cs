@@ -26,19 +26,6 @@ namespace GroupProjectCSharp
         {
             // temporary testing function for HighlanderMovements component
 
-            string[][] area = { 
-                ["", "8", "7", "6", "", ""], 
-                ["", "1", "P", "5", "", ""],
-                ["", "2", "3", "4", "", ""], 
-                ["", "", "", "", "", ""], 
-                ["", "", "", "", "", ""], 
-                ["", "", "", "", "", ""] 
-            };
-
-            int CurrentPlayerX = 1;
-            int CurrentPlayerY = 2;
-
-            Boolean ?isEvil = null;
 
             string outputText = "";
 
