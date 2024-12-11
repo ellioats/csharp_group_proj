@@ -20,11 +20,14 @@ namespace Game
 
         private Boolean gridInitialized = false;
 
+        private Random rand;
+
 
         public Grid(int x, int y)
         {
             this.width = x;
             this.height = y;
+            this.rand = new Random();
         }
 
         public Grid(int x, int y, List<Highlander> playerList)
@@ -32,6 +35,7 @@ namespace Game
             this.width = x;
             this.height = y;
             this.currentPlayers = playerList;
+            this.rand = new Random();
         }
 
         // needs testing
@@ -52,6 +56,17 @@ namespace Game
         List<Highlander> getCurrentPlayers()
         {
             return this.currentPlayers;
+        }
+
+        public void setPlayerList(List<Highlander> list)
+        {
+            if (this.currentPlayers.Count != 0)
+            {
+                Console.WriteLine("Cannot set playerlist, returning...");
+                return;
+            }
+
+            this.currentPlayers = list;
         }
 
         public int currentNumOfPlayers()
@@ -125,6 +140,28 @@ namespace Game
                     this.grid[h.X, h.Y] = (h.IsGood ? "Good" : "Evil");
                 }
             }
+        }
+
+        public int[] getRandomXY()
+        {
+            int[] fin = new int[2];
+
+            fin[0] = this.rand.Next(0, this.width);
+            fin[1] = this.rand.Next(0, this.height);
+
+            return fin;
+        }
+
+        public void verbosePlayerPrint()
+        {
+            Console.WriteLine("Current Highlander List\n");
+
+            foreach (Highlander h in this.currentPlayers)
+            {
+                Console.WriteLine("{0} Highlander located at [{1},{2}]", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
+            }
+
+            Console.WriteLine("List end ----");
         }
     }
 
