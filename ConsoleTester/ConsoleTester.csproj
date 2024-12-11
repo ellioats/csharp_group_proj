@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Game\Game.csproj">
+      <Project>{b327cc3d-039d-4bce-9732-f1656bdc9864}</Project>
+      <Name>Game</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HighlanderMovements\HighlanderMovements.csproj">
       <Project>{100ff2db-be47-418f-87b4-19bf45fdb410}</Project>
       <Name>HighlanderMovements</Name>

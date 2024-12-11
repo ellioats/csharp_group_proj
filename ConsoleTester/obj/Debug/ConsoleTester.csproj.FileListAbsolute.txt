@@ -32,3 +32,5 @@ C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\bin\Debug\Simulatio
 C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\bin\Debug\HighlanderMovements.pdb
 C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\bin\Debug\Simulation.pdb
 C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\obj\Debug\ConsoleT.2B196E7D.Up2Date
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\bin\Debug\Game.dll
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\bin\Debug\Game.pdb

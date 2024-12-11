@@ -14,7 +14,8 @@ namespace ConsoleTester
         {
             //test1();
             //HighlanderMovementsTest1();
-            RandomMovementTest();
+            //RandomMovementTest();
+            gridPlayerMovementTest();
 
 
             Console.Read();
@@ -149,12 +150,31 @@ namespace ConsoleTester
 
         static void gridPlayerMovementTest()
         {
-            Grid g = gridInit(20, 20);
+            Grid g = new Grid(20,20);
+            g.initGrid();
+
             
             Highlander h1 = new Highlander(5,5, true);
 
+            // player is placed at position 5,5
+            g.placePlayer(h1);
+
+            Console.WriteLine("First Print: ");
+            g.printGrid();
+
+            // new position should be 4,5
+            h1.MoveRight();
+
+            // update to reflect position changes
+            g.gridUpdate();
 
 
+            Console.WriteLine("Second Print: ");
+            g.printGrid();
+
+            Console.WriteLine("FINAL INFO: ");
+            Console.WriteLine("Total num of players: {0}", g.currentNumOfPlayers());
+                
 
 
         }
