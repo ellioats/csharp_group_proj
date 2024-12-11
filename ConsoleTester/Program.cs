@@ -1,10 +1,10 @@
-﻿using GroupProjectCSharp;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HighlanderMovements;
+using Game;
 
 namespace ConsoleTester
 {
@@ -18,6 +18,11 @@ namespace ConsoleTester
 
 
             Console.Read();
+        }
+
+        static Grid gridInit(int x, int y)
+        {
+            return new Grid(x,y);
         }
 
 
@@ -129,19 +134,30 @@ namespace ConsoleTester
 
             printArea(area);
 
-            
             HighlanderMovements.Highlander highlander = new HighlanderMovements.Highlander(1, 2, true);
-
 
             HighlanderMovements.Class1.MoveRandomly(ref area, ref highlander);
 
-            
-
             printArea(area);
-
 
         }
 
+
+        /*
+         GRID.CS TESTS
+         */
+
+        static void gridPlayerMovementTest()
+        {
+            Grid g = gridInit(20, 20);
+            
+            Highlander h1 = new Highlander(5,5, true);
+
+
+
+
+
+        }
 
     }
 }
