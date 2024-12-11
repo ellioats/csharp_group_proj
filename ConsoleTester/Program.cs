@@ -15,7 +15,8 @@ namespace ConsoleTester
             //test1();
             //HighlanderMovementsTest1();
             //RandomMovementTest();
-            gridPlayerMovementTest();
+            //gridPlayerMovementTest();
+            gameLoopTest1();
 
 
             Console.Read();
@@ -178,6 +179,41 @@ namespace ConsoleTester
                 
 
 
+        }
+
+        static void gameLoopTest1()
+        {
+            List<Highlander> list = new List<Highlander>();
+            
+            Console.WriteLine("Game start!");
+
+            Console.Write("grid width: ");
+            int width = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("grid height: ");
+            int height = Convert.ToInt32(Console.ReadLine());
+
+            Grid g = new Grid(width, height);
+            g.initGrid();
+
+            Console.Write("\nHow many highlanders: ");
+            int numberOfHighlanders = Convert.ToInt32(Console.ReadLine());
+
+            for (int x = 0; x < numberOfHighlanders; x++)
+            {
+                int[] coords = g.getRandomXY();
+                list.Add(new Highlander(coords[0], coords[1], true));
+            }
+
+            // set grid player list 
+            g.setPlayerList(list);
+
+            g.gridUpdate(); // update new playerList
+
+            // debug print
+            g.printGrid();
+
+            g.verbosePlayerPrint();
         }
 
     }
