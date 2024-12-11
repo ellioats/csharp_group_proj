@@ -12,8 +12,11 @@ namespace ConsoleTester
     {
         static void Main(string[] args)
         {
-            test1();
+            //test1();
             HighlanderMovementsTest1();
+
+
+            Console.Read();
         }
 
         static void test1()
@@ -71,7 +74,7 @@ namespace ConsoleTester
             string[][] area = {
                 new string[] {"", "8", "7", "6", "", ""},
                 new string[] {"", "1", "P", "5", "", ""},
-                new string[] {"", "2", "3", "4", "", ""},
+                new string[] {"", "2", "3", "Evil", "", ""},
                 new string[] {"", "", "", "", "", ""},
                 new string[] {"", "", "", "", "", ""},
                 new string[] {"", "", "", "", "", ""}
@@ -82,13 +85,18 @@ namespace ConsoleTester
 
             List<HighlanderMovements.HighlanderInfo> info = HighlanderMovements.Class1.findAllNearbyHighlanders(ref area, CurrentPlayerX, CurrentPlayerY);
 
-            if (info != null)
+
+            if (info.Count > 0)
             {
                 foreach (HighlanderMovements.HighlanderInfo i in info)
                 {
-                    Console.WriteLine("Highlander found at position {0}, {1}", i.xPos, i.yPos);
+                    Console.WriteLine("{3} Highlander found at position {0}, {1}", i.xPos, i.yPos, (i.isEvil ? ""));
                 }
+            } else
+            {
+                Console.WriteLine("List is null...");
             }
+
         }
     }
 }

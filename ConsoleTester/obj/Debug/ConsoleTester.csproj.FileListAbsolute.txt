@@ -24,3 +24,11 @@ C:\Users\hamma\Source\Repos\csharp_group_proj_working\ConsoleTester\bin\Debug\Si
 C:\Users\hamma\Source\Repos\csharp_group_proj_working\ConsoleTester\bin\Debug\HighlanderMovements.pdb
 C:\Users\hamma\Source\Repos\csharp_group_proj_working\ConsoleTester\bin\Debug\Simulation.pdb
 C:\Users\hamma\Source\Repos\csharp_group_proj_working\ConsoleTester\obj\Debug\ConsoleT.2B196E7D.Up2Date
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\bin\Debug\ConsoleTester.exe.config
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\bin\Debug\ConsoleTester.exe
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\bin\Debug\ConsoleTester.pdb
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\bin\Debug\HighlanderMovements.dll
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\bin\Debug\Simulation.dll
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\bin\Debug\HighlanderMovements.pdb
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\bin\Debug\Simulation.pdb
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\obj\Debug\ConsoleT.2B196E7D.Up2Date
