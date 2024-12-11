@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HighlanderMovements;
 
 namespace ConsoleTester
 {
@@ -11,6 +12,11 @@ namespace ConsoleTester
     {
         static void Main(string[] args)
         {
+        }
+
+        static void test1()
+        {
+
             int width = 10;
             int height = 10;
 
@@ -42,13 +48,13 @@ namespace ConsoleTester
                     var highlanderPosition = simulation.GetHighlanderPosition(i);
                     var highlander = simulation.GetHighlander(i);
 
-                    if (highlanderi.IsAlive && !highlanderi.IsGood)
+                    if (highlander.IsAlive && !highlander.IsGood)
                     {
-                        Console.WriteLine($"Bad Highlander {i} Position: ({highlanderiPosition.Item1}, {highlanderiPosition.Item2})");
+                        Console.WriteLine($"Bad Highlander {i} Position: ({highlanderPosition.Item1}, {highlanderPosition.Item2})");
                     }
                     else
                     {
-                        Console.WriteLine($"Good Highlander {i} Position: ({highlanderiPosition.Item1}, {highlanderiPosition.Item2})");
+                        Console.WriteLine($"Good Highlander {i} Position: ({highlanderPosition.Item1}, {highlanderPosition.Item2})");
                     }
                 }
 
@@ -57,6 +63,34 @@ namespace ConsoleTester
             }
 
             Console.WriteLine("All bad Highlanders defeated!");
+        }
+
+        static void HighlanderMovementsTest1()
+        {
+            
+            string[][] area = { 
+                ["", "8", "7", "6", "", ""], 
+                ["", "1", "P", "5", "", ""],
+                ["", "2", "3", "4", "", ""], 
+                ["", "", "", "", "", ""], 
+                ["", "", "", "", "", ""], 
+                ["", "", "", "", "", ""] 
+            };
+
+            int CurrentPlayerX = 1;
+            int CurrentPlayerY = 2;
+
+            Boolean ?isEvil = null;
+
+            List<HighlanderMovements.HighlanderInfo> info = HighlanderMovements.Class1.findAllNearbyHighlanders(ref area, CurrentPlayerX, CurrentPlayerY);
+
+            if (info != null)
+            {
+                foreach (HighlanderInfo i in info)
+                {
+                    Console.WriteLine("Highlander found at position {0}, {1}", i.xPos, i.yPos);
+                }
+            }
         }
     }
 }

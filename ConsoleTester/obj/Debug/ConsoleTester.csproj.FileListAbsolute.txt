@@ -8,3 +8,7 @@ C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\obj\Debug\Con
 C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\obj\Debug\ConsoleT.2B196E7D.Up2Date
 C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\obj\Debug\ConsoleTester.exe
 C:\Users\hamma\Source\Repos\csharp_group_proj_latest\ConsoleTester\obj\Debug\ConsoleTester.pdb
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\obj\Debug\ConsoleTester.csproj.AssemblyReference.cache
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\obj\Debug\ConsoleTester.csproj.CoreCompileInputs.cache
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\obj\Debug\ConsoleTester.exe
+C:\Users\emwcu\source\repos\GroupProjectCSharp\ConsoleTester\obj\Debug\ConsoleTester.pdb
