@@ -126,6 +126,43 @@ namespace HighlanderMovements
                 return info;
         }
 
+        // TODO: Code Coverage Unit Test
+        public static void MoveRandomly(ref string[][] area, ref HighlanderMovements.Highlander player)
+        {
+            Random rand = new Random();
+            int direction = rand.Next(0, 8);
+
+
+            switch (direction) {
+                case 0:
+                    player.MoveRight();
+                    break;
+                case 1:
+                    player.MoveDownRight();
+                    break;
+                case 2:
+                    player.MoveDown();
+                    break;
+                case 3:
+                    player.MoveDownLeft();
+                    break;
+                case 4:
+                    player.MoveLeft();
+                    break;
+                case 5:
+                    player.MoveUpLeft();
+                    break;
+                case 6:
+                    player.MoveUp();
+                    break;
+                case 7:
+                    player.MoveUpRight();
+                    break;
+            }
+            
+
+        }
+
 
 
     }

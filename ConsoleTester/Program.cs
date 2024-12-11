@@ -13,10 +13,26 @@ namespace ConsoleTester
         static void Main(string[] args)
         {
             //test1();
-            HighlanderMovementsTest1();
+            //HighlanderMovementsTest1();
+            RandomMovementTest();
 
 
             Console.Read();
+        }
+
+
+        static void printArea(string[][] area)
+        {
+            Console.WriteLine("Area print -- ");
+            for (int x = 0; x < area.GetLength(0); x++)
+            {
+                for (int y = 0; y < area[x].GetLength(0); y++)
+                {
+                    Console.Write("{0}, ", area[x][y]);
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("\n");
         }
 
         static void test1()
@@ -98,5 +114,34 @@ namespace ConsoleTester
             }
 
         }
+
+        static void RandomMovementTest()
+        {
+
+            string[][] area = {
+                new string[] {"", "", "", "", "", ""},
+                new string[] {"", "", "Good", "", "", ""},
+                new string[] {"", "", "", "", "", ""},
+                new string[] {"", "", "", "", "", ""},
+                new string[] {"", "", "", "", "", ""},
+                new string[] {"", "", "", "", "", ""}
+            };
+
+            printArea(area);
+
+            
+            HighlanderMovements.Highlander highlander = new HighlanderMovements.Highlander(1, 2, true);
+
+
+            HighlanderMovements.Class1.MoveRandomly(ref area, ref highlander);
+
+            
+
+            printArea(area);
+
+
+        }
+
+
     }
 }
