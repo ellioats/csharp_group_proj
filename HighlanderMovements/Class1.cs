@@ -7,15 +7,16 @@ using System.Threading.Tasks;
 
 namespace HighlanderMovements
 {
+    public struct HighlanderInfo
+    {
+        public Boolean isEvil;
+        public int xPos;
+        public int yPos;
+    }
+
     public class Class1
     {
 
-        private struct HighlanderInfo
-        {
-            public Boolean isEvil;
-            public int xPos;
-            public int yPos;
-        }
 
         const int SQUARESTOCHECK = 8;
 
@@ -75,7 +76,7 @@ namespace HighlanderMovements
 
         }
 
-        public static HighlanderInfo[] findAllNearbyHighlanders(ref string[][] area, int playerCurrentX, int playerCurrentY)
+        public static List<HighlanderInfo> findAllNearbyHighlanders(ref string[][] area, int playerCurrentX, int playerCurrentY)
         {
 
             int checkingCurrentPosX = playerCurrentX - 1;
@@ -83,6 +84,9 @@ namespace HighlanderMovements
 
             int checkingBoundX = checkingCurrentPosX + 2;
             int checkingBoundY = checkingCurrentPosY + 2;
+
+            List<HighlanderInfo> info = new List<HighlanderInfo>();
+            
 
 
             for (int x = checkingCurrentPosX; x < (checkingBoundX + 1); x++)
@@ -99,17 +103,23 @@ namespace HighlanderMovements
 
                     if (area[x][y] == "Evil")
                     {
-
+                        HighlanderInfo a = new HighlanderInfo();
+                        a.yPos = y;
+                        a.xPos = x;
+                        a.isEvil = true;
+                        info.Add(a);
                     }
                     else if (area[x][y] == "Good")
                     {
+                        HighlanderInfo a = new HighlanderInfo();
+                        a.yPos = y;
+                        a.xPos = x;
+                        a.isEvil = false;
+                        info.Add(a);
                     }
-                    
-
                 }
-                
             }
-
+                return info;
         }
 
     }
