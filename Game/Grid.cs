@@ -16,7 +16,9 @@ namespace Game
         // contains players on current grid
         private List<HighlanderMovements.Highlander> currentPlayers = new List<Highlander>();
 
-        private string[][] grid;
+        private string[,] grid;
+
+        private Boolean gridInitialized = false;
 
 
         public Grid(int x, int y)
@@ -33,12 +35,18 @@ namespace Game
         }
 
         // needs testing
-        private void initGrid(int x, int y)
+        public void initGrid()
         {
-            for (int i = 0; i < x; i++)
-            {
-                this.grid[i] = new string[y];
-            }
+            if (gridInitialized) return;
+
+            this.grid = new string[width, height];
+
+            //for (int i = 0; i < width; i++)
+            //{
+            //    for (int ii = 0; y < height)
+            //}
+
+            gridInitialized = true;
         }
 
         List<Highlander> getCurrentPlayers()
@@ -46,18 +54,66 @@ namespace Game
             return this.currentPlayers;
         }
 
+        public int currentNumOfPlayers()
+        {
+            return this.currentPlayers.Count;
+        }
+
         public void printGrid()
         {
             Console.WriteLine("Grid print");
+
+            Console.WriteLine("DEBUG: current length of outer is {0}", this.grid.GetLength(0));
+            Console.WriteLine("DEBUG: current length of inner is {0}", this.grid.GetLength(1));
+
             for (int i = 0; i < this.grid.GetLength(0); i++)
             {
-                for (int ii = 0; i < this.grid.GetLength(1); ii++)
+                for (int ii = 0; ii < this.grid.GetLength(1); ii++)
                 {
-                    Console.Write("{0}, ", this.grid[i][ii]);
+
+                    //Console.WriteLine("({0},{1}) = {2} ", i, ii, this.grid[i, ii]);
+                    Console.Write("'{0}', ", this.grid[i, ii]);
                 }
                 Console.WriteLine();
             }
             Console.WriteLine("\n");
         }
+
+        public void placePlayer(Highlander h)
+        {
+            Console.WriteLine("Place Player Method entered...");
+            // checks if specified position is filled
+            if (this.grid[h.X, h.Y] != "")
+            {
+                //Console.WriteLine("DEBUG: Position is filled, cannot place player...");
+                Console.WriteLine("Position is empty...");
+                return;
+            }
+
+            this.grid[h.X, h.Y] = (h.IsGood) ? "Good" : "Evil";
+            this.currentPlayers.Add(h);
+            
+        }
+
+        /// <summary>
+        /// Updates Grid and player positions specified in the currentPlayers list
+        /// </summary>
+        public void gridUpdate()
+        {
+            // validates location on grid for each highlander currently in list
+            foreach (Highlander h in this.currentPlayers.ToList())
+            {
+                if (this.grid[h.X, h.Y] == (h.IsGood ? "Good" : "Evil"))
+                {
+                    Console.WriteLine("DEBUG: {0} Highlander is in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
+                } 
+                else
+                {
+                    Console.WriteLine("DEBUG: {0} Highlander is not in correct position on grid ({1}, {2}...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
+                    this.placePlayer(h);
+                }
+            }
+        }
     }
+
 }

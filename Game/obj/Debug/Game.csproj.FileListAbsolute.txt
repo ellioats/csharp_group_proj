@@ -1,0 +1,9 @@
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\bin\Debug\Game.dll
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\bin\Debug\Game.pdb
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\bin\Debug\HighlanderMovements.dll
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\bin\Debug\HighlanderMovements.pdb
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.csproj.Up2Date
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.dll
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.pdb
