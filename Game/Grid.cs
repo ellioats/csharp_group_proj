@@ -58,6 +58,18 @@ namespace Game
             return this.currentPlayers;
         }
 
+        public void removeHighlander(Highlander h)
+        {
+            foreach (Highlander p in this.currentPlayers.ToList())
+            {
+                if (p.Equals(h))
+                {
+                    this.grid[p.X, p.Y] = null; // remove position on grid
+                    this.currentPlayers.Remove(p);
+                }
+            }
+        }
+
         public void setPlayerList(List<Highlander> list)
         {
             if (this.currentPlayers.Count != 0)
@@ -123,21 +135,29 @@ namespace Game
         public void gridUpdate()
         {
 
-            //Console.WriteLine("Grid update method...");
+            Console.WriteLine("Grid update method...");
 
             // validates location on grid for each highlander currently in list
             foreach (Highlander h in this.currentPlayers.ToList())
             {
-                //Console.WriteLine("x: {0}, y: {1}...", h.X, h.Y);
                 if (this.grid[h.X, h.Y] == (h.IsGood ? "Good" : "Evil"))
                 {
                     //Console.WriteLine("DEBUG: {0} Highlander is in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
                 } 
                 else
                 {
-                    //Console.WriteLine("DEBUG: {0} Highlander is not in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
-                    this.grid[h.prevX, h.prevY] = ""; // sets previous position as empty
-                    this.grid[h.X, h.Y] = (h.IsGood ? "Good" : "Evil");
+                    Console.WriteLine("DEBUG: {0} Highlander is not in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
+                    Console.WriteLine("Previous position was [{0}, {1}]", h.prevX, h.prevY);
+
+                    if (h.prevX == h.X && h.prevY == h.Y)
+                    {
+                        Console.WriteLine("Starting position detected, not changing");
+                        return;
+                    }
+
+                    this.grid[h.X, h.Y] = (h.IsGood) ? "Good" : "Evil"; // sets previous position as empty
+                    this.grid[h.prevX, h.prevY] = "";
+                    //this.grid[h.X, h.Y] = (h.IsGood ? "Good" : "Evil");
                 }
             }
         }
@@ -160,9 +180,22 @@ namespace Game
             {
                 Console.WriteLine("{0} Highlander located at [{1},{2}]", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
             }
-            Console.WriteLine();
+            //Console.WriteLine();
             //Console.WriteLine("List end ----");
         }
+
+        public string[,] getGrid()
+        {
+            return this.grid;
+        }
+        
+        public bool isSpaceOpen(int x, int y)
+        {
+            return (this.grid[x, y] == null);
+        }
+
+        
+
     }
 
 }
