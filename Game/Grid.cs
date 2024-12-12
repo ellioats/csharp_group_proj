@@ -135,19 +135,22 @@ namespace Game
         public void gridUpdate()
         {
 
-            Console.WriteLine("Grid update method...");
+            Console.WriteLine("\nGrid update method...");
 
             // validates location on grid for each highlander currently in list
             foreach (Highlander h in this.currentPlayers.ToList())
             {
+                Console.WriteLine("Currently Selected Highlander info");
+                Console.WriteLine("\tX:{0}\n\tY:{1}\nAffinity:{2}", h.X, h.Y, (h.IsGood) ? "Good" : "Evil");
+                Console.WriteLine("Current Affinity value at [{0},{1}] is {2}...\n", h.X, h.Y, (grid[h.X, h.Y]));
+
                 if (this.grid[h.X, h.Y] == (h.IsGood ? "Good" : "Evil"))
                 {
+                    Console.WriteLine("Current selected Highlander is in expected position...");
                     //Console.WriteLine("DEBUG: {0} Highlander is in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
                 } 
                 else
                 {
-                    Console.WriteLine("DEBUG: {0} Highlander is not in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
-                    Console.WriteLine("Previous position was [{0}, {1}]", h.prevX, h.prevY);
 
                     if (h.prevX == h.X && h.prevY == h.Y)
                     {
@@ -155,7 +158,11 @@ namespace Game
                         return;
                     }
 
-                    this.grid[h.X, h.Y] = (h.IsGood) ? "Good" : "Evil"; // sets previous position as empty
+                    Console.WriteLine("DEBUG: {0} Highlander is not in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
+                    Console.WriteLine("Previous position was [{0}, {1}]", h.prevX, h.prevY);
+
+                    Console.WriteLine("\nSetting Orientation at [{0},{1}] to {2}", h.X, h.Y, (h.IsGood) ? "Good" : "Evil");
+                    this.grid[h.X, h.Y] = (h.IsGood) ? "Good" : "Evil"; 
                     this.grid[h.prevX, h.prevY] = "";
                     //this.grid[h.X, h.Y] = (h.IsGood ? "Good" : "Evil");
                 }
