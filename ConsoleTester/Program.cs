@@ -363,8 +363,6 @@ namespace ConsoleTester
                     }
                 }
 
-                
-
                 g.gridUpdate();
                 g.printGrid();
             }
