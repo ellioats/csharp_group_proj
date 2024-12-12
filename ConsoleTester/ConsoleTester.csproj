@@ -35,6 +35,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.9.0\lib\net462\System.Data.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,11 +51,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Game\Game.csproj">
       <Project>{b327cc3d-039d-4bce-9732-f1656bdc9864}</Project>
       <Name>Game</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HighlanderDB\HighlanderDB.csproj">
+      <Project>{6bcea7c7-68b4-4d19-a303-1722ca555ec9}</Project>
+      <Name>HighlanderDB</Name>
     </ProjectReference>
     <ProjectReference Include="..\HighlanderMovements\HighlanderMovements.csproj">
       <Project>{100ff2db-be47-418f-87b4-19bf45fdb410}</Project>
@@ -62,6 +70,9 @@
       <Project>{06118c2f-17fb-4cdb-8547-31d8570416c6}</Project>
       <Name>Simulation</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

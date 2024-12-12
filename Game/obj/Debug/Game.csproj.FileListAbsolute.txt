@@ -7,3 +7,14 @@ C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.csproj.CoreCo
 C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.csproj.Up2Date
 C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.dll
 C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.pdb
+C:\Users\teren\Desktop\fallProject\Game\bin\Debug\Game.dll
+C:\Users\teren\Desktop\fallProject\Game\bin\Debug\Game.pdb
+C:\Users\teren\Desktop\fallProject\Game\bin\Debug\HighlanderMovements.dll
+C:\Users\teren\Desktop\fallProject\Game\bin\Debug\HighlanderMovements.pdb
+C:\Users\teren\Desktop\fallProject\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+C:\Users\teren\Desktop\fallProject\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+C:\Users\teren\Desktop\fallProject\Game\obj\Debug\Game.csproj.Up2Date
+C:\Users\teren\Desktop\fallProject\Game\obj\Debug\Game.dll
+C:\Users\teren\Desktop\fallProject\Game\obj\Debug\Game.pdb
+C:\Users\teren\Desktop\fallProject\Game\bin\Debug\System.Data.SqlClient.dll
+C:\Users\teren\Desktop\fallProject\Game\bin\Debug\System.Data.SqlClient.xml

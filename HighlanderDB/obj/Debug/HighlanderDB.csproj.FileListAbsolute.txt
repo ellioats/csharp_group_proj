@@ -1,0 +1,6 @@
+C:\Users\teren\Desktop\fallProject\HighlanderDB\bin\Debug\HighlanderDB.dll
+C:\Users\teren\Desktop\fallProject\HighlanderDB\bin\Debug\HighlanderDB.pdb
+C:\Users\teren\Desktop\fallProject\HighlanderDB\obj\Debug\HighlanderDB.csproj.AssemblyReference.cache
+C:\Users\teren\Desktop\fallProject\HighlanderDB\obj\Debug\HighlanderDB.csproj.CoreCompileInputs.cache
+C:\Users\teren\Desktop\fallProject\HighlanderDB\obj\Debug\HighlanderDB.dll
+C:\Users\teren\Desktop\fallProject\HighlanderDB\obj\Debug\HighlanderDB.pdb

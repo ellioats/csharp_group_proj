@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HighlanderMovements;
 using Game;
+using HighlanderDB;
 
 namespace ConsoleTester
 {
@@ -19,9 +20,20 @@ namespace ConsoleTester
             //gameLoopTest1();
             //moveRandomly10x();
             //moveRandomlyBoundsDetectionTest();
-            routineTest();
+            //routineTest();
+            twoHighlanderFightTest();
 
 
+          /*  string connectionString = "Server=(local);Database=FallProject;User=projectLogin;Password=12345";
+
+            // Initialize the database handler
+            DatabaseHandler dbHandler = new DatabaseHandler(connectionString);
+
+            // Test the database connection
+            dbHandler.TestConnection();
+
+            Console.WriteLine("Press any key to exit...");
+           */
             Console.Read();
         }
 
@@ -298,12 +310,22 @@ namespace ConsoleTester
 
             g.gridUpdate();
 
-            for (int x = 0; x < 100; x++)
+            if (Highlander.fight(h1, h2))
             {
-                // unfinished
+                // Highlander 1 wins
+                Console.WriteLine("Highlander 1 wins!");
+                g.removeHighlander(h2); // Remove the loser
+            }
+            else
+            {
+                // Highlander 2 wins
+                Console.WriteLine("Highlander 2 wins!");
+                g.removeHighlander(h1); // Remove the loser
             }
 
 
+            g.gridUpdate();
+            g.printGrid();
         }
 
         // WIP

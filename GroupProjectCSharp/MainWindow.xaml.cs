@@ -31,7 +31,7 @@ namespace GroupProjectCSharp
 
 
 
-            HighlanderMovements.Class1.isHighlanderNear(ref area, CurrentPlayerX, CurrentPlayerY, ref isEvil, ref outputText);
+            HighlanderMovements.DatabaseHandler.isHighlanderNear(ref area, CurrentPlayerX, CurrentPlayerY, ref isEvil, ref outputText);
 
             textBlock.Text = outputText;
         }

@@ -23,3 +23,11 @@ C:\Users\emwcu\source\repos\GroupProjectCSharp\GroupProjectCSharp\obj\Debug\net8
 C:\Users\emwcu\source\repos\GroupProjectCSharp\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.pdb
 C:\Users\emwcu\source\repos\GroupProjectCSharp\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.genruntimeconfig.cache
 C:\Users\emwcu\source\repos\GroupProjectCSharp\GroupProjectCSharp\obj\Debug\net8.0-windows\ref\GroupProjectCSharp.dll
+C:\Users\teren\Desktop\fallProject\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.csproj.AssemblyReference.cache
+C:\Users\teren\Desktop\fallProject\GroupProjectCSharp\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\teren\Desktop\fallProject\GroupProjectCSharp\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\teren\Desktop\fallProject\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp_MarkupCompile.cache
+C:\Users\teren\Desktop\fallProject\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp_MarkupCompile.lref
+C:\Users\teren\Desktop\fallProject\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.dll
+C:\Users\teren\Desktop\fallProject\GroupProjectCSharp\obj\Debug\net8.0-windows\refint\GroupProjectCSharp.dll
+C:\Users\teren\Desktop\fallProject\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.pdb

@@ -4,3 +4,12 @@ C:\Users\emwcu\source\repos\GroupProjectCSharp\HighlanderMovements\obj\Debug\Hig
 C:\Users\emwcu\source\repos\GroupProjectCSharp\HighlanderMovements\obj\Debug\HighlanderMovements.csproj.CoreCompileInputs.cache
 C:\Users\emwcu\source\repos\GroupProjectCSharp\HighlanderMovements\obj\Debug\HighlanderMovements.dll
 C:\Users\emwcu\source\repos\GroupProjectCSharp\HighlanderMovements\obj\Debug\HighlanderMovements.pdb
+C:\Users\teren\Desktop\fallProject\HighlanderMovements\obj\Debug\HighlanderMovements.csproj.AssemblyReference.cache
+C:\Users\teren\Desktop\fallProject\HighlanderMovements\obj\Debug\HighlanderMovements.csproj.CoreCompileInputs.cache
+C:\Users\teren\Desktop\fallProject\HighlanderMovements\obj\Debug\HighlanderMovements.dll
+C:\Users\teren\Desktop\fallProject\HighlanderMovements\obj\Debug\HighlanderMovements.pdb
+C:\Users\teren\Desktop\fallProject\HighlanderMovements\bin\Debug\HighlanderMovements.dll
+C:\Users\teren\Desktop\fallProject\HighlanderMovements\bin\Debug\HighlanderMovements.pdb
+C:\Users\teren\Desktop\fallProject\HighlanderMovements\bin\Debug\System.Data.SqlClient.dll
+C:\Users\teren\Desktop\fallProject\HighlanderMovements\bin\Debug\System.Data.SqlClient.xml
+C:\Users\teren\Desktop\fallProject\HighlanderMovements\obj\Debug\Highland.A42A3EDE.Up2Date

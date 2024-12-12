@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTester", "ConsoleTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", "{B327CC3D-039D-4BCE-9732-F1656BDC9864}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighlanderDB", "HighlanderDB\HighlanderDB.csproj", "{6BCEA7C7-68B4-4D19-A303-1722CA555EC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B327CC3D-039D-4BCE-9732-F1656BDC9864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B327CC3D-039D-4BCE-9732-F1656BDC9864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B327CC3D-039D-4BCE-9732-F1656BDC9864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BCEA7C7-68B4-4D19-A303-1722CA555EC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCEA7C7-68B4-4D19-A303-1722CA555EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCEA7C7-68B4-4D19-A303-1722CA555EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BCEA7C7-68B4-4D19-A303-1722CA555EC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
