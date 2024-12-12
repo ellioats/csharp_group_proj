@@ -38,8 +38,6 @@ namespace HighlanderMovements
             prevX = startX;
             prevY = startY;
 
-            
-
             IsGood = isGood;
 
             rand = new Random();
@@ -50,6 +48,12 @@ namespace HighlanderMovements
             X = startCoords[0];
             Y = startCoords[1];
             this.IsGood = isGood;
+            rand = new Random();
+        }
+
+        public bool isFirstPosition()
+        {
+            return this.setPrevCoordPace;
         }
 
         // when a highlander kills another highlander, run this 
@@ -113,22 +117,26 @@ namespace HighlanderMovements
 
         private void validateNewPosition(int maxWidth, int maxHeight)
         {
+            /* 2d Array Bound Validation */
+
             // revert to prevX or prevY values
             if (this.X == maxWidth || this.X == -1)
             {
                 //Console.WriteLine("{0} is equal to {1}(maxWidth)", X, maxWidth);
                 this.X = (X < 0) ? 1 : maxWidth - 1 ;
+                Console.WriteLine("Validation failed...");
                 //this.MoveRandomly(maxWidth, maxHeight);
             } else if (this.Y == maxHeight || this.Y == -1)
             {
                 //Console.WriteLine("{0} is equal to {1}(maxHeight)", Y, maxHeight);
                 this.Y = (Y < 0) ? 1 : maxHeight - 1 ;
+                Console.WriteLine("Validation failed...");
                 //this.MoveRandomly(maxWidth, maxHeight);
             }
 
-            //Console.WriteLine("Returning...");
-            return;
+            Console.WriteLine("Validation passed...");
 
+            return;
 
         }
 
@@ -174,18 +182,13 @@ namespace HighlanderMovements
             this.setPrevCoordPace = true;
         }
 
-
         // routine to run every "turn"
         public void routine(string[,] area)
         {
-
-            List<HighlanderInfo> otherHighlanders = findAllNearbyHighlanders(area, this.X, this.Y);
-
-            // depending on the enemies around and their affinity. Move away or towards. 
-
+            
+            
 
         }
-
 
         private void moveTowards(string[,] area, HighlanderInfo info)
         {
@@ -235,7 +238,6 @@ namespace HighlanderMovements
             
         }
 
-
         private List<HighlanderInfo> findAllNearbyHighlanders(string[,] area, int playerCurrentX, int playerCurrentY)
         {
 
@@ -252,13 +254,13 @@ namespace HighlanderMovements
                 for (int y = checkingCurrentPosY; y < (checkingBoundY + 1); y++)
                 {
 
-                    if (x < 0 && y < 0)
+                    if (x < 0 && y < 0 || y >= area.GetLength(1) || x >= area.GetLength(0) || y < 0|| x < 0)
                         continue;
                     // disregards player's current position
                     if (x == playerCurrentX && y == playerCurrentY)
                         continue;
 
-
+                    
                     if (area[x, y] == "Evil")
                     {
                         HighlanderInfo a = new HighlanderInfo();
@@ -279,5 +281,45 @@ namespace HighlanderMovements
             }
                 return info;
         }
+
+        public static bool fight(Highlander p1, Highlander p2)
+        {
+            Console.WriteLine("Fight!");
+            // return result: true, p1 won, 
+            // false, p2 won
+
+            Random rand = new Random();
+
+            if (p1.Power > p2.Power)
+            {
+                Console.WriteLine("P1 wins!");
+                p1.HighlanderKill();
+                return true;
+            }
+            else if (p1.Power < p2.Power)
+            {
+                Console.WriteLine("P2 wins!");
+                p2.HighlanderKill();
+                return false;   
+            } 
+            else
+            {
+                int result = rand.Next(0,2);
+                if (result == 0)
+                {
+                    Console.WriteLine("P2 wins!");
+                    p2.HighlanderKill();
+                    return false;
+                }
+                else
+                {
+                    Console.WriteLine("P1 wins!");
+                    p1.HighlanderKill();
+                    return true;
+                }
+            }
+        }
+
+        
     }
 }
