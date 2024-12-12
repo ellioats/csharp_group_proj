@@ -8,9 +8,8 @@ namespace Game
 {
     class Tile
     {
-        public bool isOccupied = false; // by default, all tiles are empty
 
-        private HighlanderMovements.Highlander occupant;
+        public bool isOccupied = false; // by default, all tiles are empty
 
         // x and y should only be set in constructor
         private int x { get; }

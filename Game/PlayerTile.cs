@@ -9,7 +9,6 @@ namespace Game
     class PlayerTile : Tile
     {
 
-        public bool isOccupied = false; // by default, all tiles are empty
 
         private HighlanderMovements.Highlander occupant;
 
@@ -19,8 +18,13 @@ namespace Game
         /// <param name="player">highlander is expected to be fully initialized</param>
         public PlayerTile(HighlanderMovements.Highlander player) : base(player.X, player.Y) 
         {
-            this.isOccupied = true;
+            base.isOccupied = true;
             this.occupant = player;
+        }
+        
+        public HighlanderMovements.Highlander getPlayer()
+        {
+            return this.occupant;
         }
 
         
