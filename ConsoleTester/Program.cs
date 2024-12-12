@@ -271,16 +271,38 @@ namespace ConsoleTester
             g.gridUpdate();
 
             g.verbosePlayerPrint();
-            
+
 
             // run 5 times, moving randomly and printing position each iteration
             for (int x = 0; x < 50; x++)
             {
-            player1.MoveRandomly(g.width, g.height);
-            
-            g.gridUpdate();
-            g.verbosePlayerPrint();
+                player1.MoveRandomly(g.width, g.height);
+                
+                g.gridUpdate();
+                g.verbosePlayerPrint();
+
             }
+        }
+
+        static void twoHighlanderFightTest()
+        {
+            Grid g = new Grid(10, 10);
+            g.initGrid();
+
+            Highlander h1 = new Highlander(g.getRandomXY(), true);
+            Highlander h2 = new Highlander(g.getRandomXY(), true);
+
+            g.placePlayer(h1);
+            g.placePlayer(h2);
+
+            g.gridUpdate();
+
+            for (int x = 0; x < 100; x++)
+            {
+
+            }
+
+
         }
 
     }
