@@ -18,7 +18,8 @@ namespace ConsoleTester
             //gridPlayerMovementTest();
             //gameLoopTest1();
             //moveRandomly10x();
-            moveRandomlyBoundsDetectionTest();
+            //moveRandomlyBoundsDetectionTest();
+            routineTest();
 
 
             Console.Read();
@@ -299,9 +300,74 @@ namespace ConsoleTester
 
             for (int x = 0; x < 100; x++)
             {
-
+                // unfinished
             }
 
+
+        }
+
+        // WIP
+        static void routineTest()
+        {
+
+            Grid g = new Grid(10, 10);
+            g.initGrid();
+
+
+
+            Highlander h1 = new Highlander(g.getRandomXY(), true);
+            Highlander h2 = new Highlander(0, 0, false);
+
+            Console.WriteLine("h1 debug:");
+            Console.WriteLine("X: {0}\nY: {1}", h1.X, h1.Y); 
+
+
+            g.placePlayer(h1);
+
+            Console.WriteLine("Grid after first player --- ");
+            g.printGrid();
+
+            
+            g.placePlayer(h2);
+
+            Console.WriteLine("Grid after second player --- ");
+            g.printGrid();
+
+            //g.gridUpdate();
+
+            Console.WriteLine(g.currentNumOfPlayers());
+
+
+            Console.WriteLine("\n\n-- BEGIN -- \n\n");
+
+            for (int x = 0; x < 10; x++)
+            {
+
+                g.verbosePlayerPrint();
+
+                h1.MoveRandomly(g.width, g.height);
+
+                // conditional for fight event
+                if (!g.isSpaceOpen(h1.X, h1.Y))
+                {
+                    Console.WriteLine("Collision Detected...");
+                    if (Highlander.fight(h1, h2))
+                    {
+                        
+                        Console.WriteLine("h1 removed!");
+                        g.removeHighlander(h1);
+                    } else
+                    {
+                        Console.WriteLine("h2 removed!");
+                        g.removeHighlander(h2);
+                    }
+                }
+
+                
+
+                g.gridUpdate();
+                g.printGrid();
+            }
 
         }
 
