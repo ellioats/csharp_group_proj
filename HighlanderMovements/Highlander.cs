@@ -45,6 +45,13 @@ namespace HighlanderMovements
             rand = new Random();
         }
 
+        public Highlander(int[] startCoords, bool isGood)
+        {
+            X = startCoords[0];
+            Y = startCoords[1];
+            this.IsGood = isGood;
+        }
+
         // when a highlander kills another highlander, run this 
         public void HighlanderKill()
         {
@@ -165,6 +172,112 @@ namespace HighlanderMovements
             OnMove();
             X--; Y++;
             this.setPrevCoordPace = true;
+        }
+
+
+        // routine to run every "turn"
+        public void routine(string[,] area)
+        {
+
+            List<HighlanderInfo> otherHighlanders = findAllNearbyHighlanders(area, this.X, this.Y);
+
+            // depending on the enemies around and their affinity. Move away or towards. 
+
+
+        }
+
+
+        private void moveTowards(string[,] area, HighlanderInfo info)
+        {
+
+            if (info.xPos > this.X)
+            {
+                if (info.yPos > this.Y)
+                {
+                    MoveUpRight();
+                } else if (info.yPos < this.Y)
+                {
+                    MoveDownRight();
+                } else
+                {
+                    MoveRight();
+                }
+            } else if (info.xPos < this.X)
+            {
+                if (info.yPos > this.Y)
+                {
+                    MoveUpLeft();
+                } else if (info.yPos < this.Y)
+                {
+                    MoveDownLeft();
+                } else
+                {
+                    MoveLeft();
+                }
+            } else
+            {
+                if (info.yPos > this.Y)
+                {
+                    MoveUp();
+                } else if (info.yPos < this.Y)
+                {
+                    MoveDown();
+                } else
+                {
+                    // start collision??
+                }
+                
+            }
+
+            this.validateNewPosition(area.GetLength(0), area.GetLength(1));
+
+
+            
+        }
+
+
+        private List<HighlanderInfo> findAllNearbyHighlanders(string[,] area, int playerCurrentX, int playerCurrentY)
+        {
+
+            int checkingCurrentPosX = playerCurrentX - 1;
+            int checkingCurrentPosY = playerCurrentY - 1;
+
+            int checkingBoundX = checkingCurrentPosX + 2;
+            int checkingBoundY = checkingCurrentPosY + 2;
+
+            List<HighlanderInfo> info = new List<HighlanderInfo>();
+            
+            for (int x = checkingCurrentPosX; x < (checkingBoundX + 1); x++)
+            {
+                for (int y = checkingCurrentPosY; y < (checkingBoundY + 1); y++)
+                {
+
+                    if (x < 0 && y < 0)
+                        continue;
+                    // disregards player's current position
+                    if (x == playerCurrentX && y == playerCurrentY)
+                        continue;
+
+
+                    if (area[x, y] == "Evil")
+                    {
+                        HighlanderInfo a = new HighlanderInfo();
+                        a.yPos = y;
+                        a.xPos = x;
+                        a.isEvil = true;
+                        info.Add(a);
+                    }
+                    else if (area[x, y] == "Good")
+                    {
+                        HighlanderInfo a = new HighlanderInfo();
+                        a.yPos = y;
+                        a.xPos = x;
+                        a.isEvil = false;
+                        info.Add(a);
+                    }
+                }
+            }
+                return info;
         }
     }
 }
