@@ -3,3 +3,7 @@
 ################################################################################
 
 *.vsidx
+/.vs/GroupProjectCSharp/CopilotIndices/17.12.38.29086/CodeChunks.db-shm
+/.vs/GroupProjectCSharp/CopilotIndices/17.12.38.29086/CodeChunks.db-wal
+/.vs/GroupProjectCSharp/CopilotIndices/17.12.38.29086/SemanticSymbols.db-shm
+/.vs/GroupProjectCSharp/CopilotIndices/17.12.38.29086/SemanticSymbols.db-wal
