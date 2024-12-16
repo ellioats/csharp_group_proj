@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\teren\\csharp_group_proj\\",
+  "WorkspaceRootPath": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\teren\\csharp_group_proj\\HighlanderMovements\\Highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HighlanderMovements\\Highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GroupProjectCSharp\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\MainWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GroupProjectCSharp\\MainWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,15 +39,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Highlander.cs",
-              "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\HighlanderMovements\\Highlander.cs",
-              "RelativeDocumentMoniker": "HighlanderMovements\\Highlander.cs",
-              "ToolTip": "C:\\Users\\teren\\csharp_group_proj\\HighlanderMovements\\Highlander.cs",
-              "RelativeToolTip": "HighlanderMovements\\Highlander.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAqwKQAAAAAAAAAAAAAAA==",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GroupProjectCSharp\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "GroupProjectCSharp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T10:50:15.418Z",
+              "WhenOpened": "2024-12-16T17:46:00.774Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "GroupProjectCSharp\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\MainWindow.xaml",
+              "RelativeToolTip": "GroupProjectCSharp\\MainWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-16T17:45:57.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             }
           ]
         }

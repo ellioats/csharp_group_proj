@@ -133,249 +133,249 @@ namespace ConsoleTester
 
         }
 
-        //static void RandomMovementTest()
-        //{
+        static void RandomMovementTest()
+        {
 
-        //    string[][] area = {
-        //        new string[] {"", "", "", "", "", ""},
-        //        new string[] {"", "", "Good", "", "", ""},
-        //        new string[] {"", "", "", "", "", ""},
-        //        new string[] {"", "", "", "", "", ""},
-        //        new string[] {"", "", "", "", "", ""},
-        //        new string[] {"", "", "", "", "", ""}
-        //    };
+            string[][] area = {
+                new string[] {"", "", "", "", "", ""},
+                new string[] {"", "", "Good", "", "", ""},
+                new string[] {"", "", "", "", "", ""},
+                new string[] {"", "", "", "", "", ""},
+                new string[] {"", "", "", "", "", ""},
+                new string[] {"", "", "", "", "", ""}
+            };
 
-        //    printArea(area);
+            printArea(area);
 
-        //    HighlanderMovements.Highlander highlander = new HighlanderMovements.Highlander(1, 2, true, "Womper chomper");
+            HighlanderMovements.Highlander highlander = new HighlanderMovements.Highlander(1, 2, true);
 
-        //    HighlanderMovements.Class1.MoveRandomly(ref area, ref highlander);
+            HighlanderMovements.Class1.MoveRandomly(ref area, ref highlander);
 
-        //    printArea(area);
+            printArea(area);
 
-        //}
+        }
 
 
         /*
          GRID.CS TESTS
          */
 
-        //static void gridPlayerMovementTest()
-        //{
-        //    Grid g = new Grid(20,20);
-        //    g.initGrid();
+        static void gridPlayerMovementTest()
+        {
+            Grid g = new Grid(20,20);
+            g.initGrid();
 
             
-        //    Highlander h1 = new Highlander(5,5, true, "test");
+            Highlander h1 = new Highlander(5,5, true);
 
-        //    // player is placed at position 5,5
-        //    g.placePlayer(h1);
+            // player is placed at position 5,5
+            g.placePlayer(h1);
 
-        //    Console.WriteLine("First Print: ");
-        //    g.printGrid();
+            Console.WriteLine("First Print: ");
+            g.printGrid();
 
-        //    // new position should be 6,5
-        //    //h1.MoveRight();
-        //    h1.MoveDown();
+            // new position should be 6,5
+            //h1.MoveRight();
+            h1.MoveDown();
 
-        //    // update to reflect position changes
-        //    g.gridUpdate();
+            // update to reflect position changes
+            g.gridUpdate();
 
 
-        //    Console.WriteLine("Second Print: ");
-        //    g.printGrid();
+            Console.WriteLine("Second Print: ");
+            g.printGrid();
 
-        //    Console.WriteLine("FINAL INFO: ");
-        //    Console.WriteLine("Total num of players: {0}", g.currentNumOfPlayers());
+            Console.WriteLine("FINAL INFO: ");
+            Console.WriteLine("Total num of players: {0}", g.currentNumOfPlayers());
                 
 
 
-        //}
+        }
 
-        //static void gameLoopTest1()
-        //{
-        //    List<Highlander> list = new List<Highlander>();
+        static void gameLoopTest1()
+        {
+            List<Highlander> list = new List<Highlander>();
             
-        //    Console.WriteLine("Game start!");
+            Console.WriteLine("Game start!");
 
-        //    Console.Write("grid width: ");
-        //    int width = Convert.ToInt32(Console.ReadLine());
+            Console.Write("grid width: ");
+            int width = Convert.ToInt32(Console.ReadLine());
 
-        //    Console.Write("grid height: ");
-        //    int height = Convert.ToInt32(Console.ReadLine());
+            Console.Write("grid height: ");
+            int height = Convert.ToInt32(Console.ReadLine());
 
-        //    Grid g = new Grid(width, height);
-        //    g.initGrid();
+            Grid g = new Grid(width, height);
+            g.initGrid();
 
-        //    Console.Write("\nHow many highlanders: ");
-        //    int numberOfHighlanders = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\nHow many highlanders: ");
+            int numberOfHighlanders = Convert.ToInt32(Console.ReadLine());
 
-        //    for (int x = 0; x < numberOfHighlanders; x++)
-        //    {
-        //        int[] coords = g.getRandomXY();
-        //        list.Add(new Highlander(coords[0], coords[1], true, ""));
-        //    }
+            for (int x = 0; x < numberOfHighlanders; x++)
+            {
+                int[] coords = g.getRandomXY();
+                list.Add(new Highlander(coords[0], coords[1], true));
+            }
 
-        //    // set grid player list 
-        //    g.setPlayerList(list);
+            // set grid player list 
+            g.setPlayerList(list);
 
-        //    g.gridUpdate(); // update new playerList
+            g.gridUpdate(); // update new playerList
 
-        //    // debug print
-        //    g.printGrid();
+            // debug print
+            g.printGrid();
 
-        //    g.verbosePlayerPrint();
-        //}
+            g.verbosePlayerPrint();
+        }
 
-        //static void moveRandomly10x()
-        //{
-        //    List<Highlander> list = new List<Highlander>();
-        //    Grid g = new Grid(20, 20);
-        //    g.initGrid();
+        static void moveRandomly10x()
+        {
+            List<Highlander> list = new List<Highlander>();
+            Grid g = new Grid(20, 20);
+            g.initGrid();
 
-        //    int[] player1Coords = g.getRandomXY();
-        //    int[] player2Coords = g.getRandomXY();
+            int[] player1Coords = g.getRandomXY();
+            int[] player2Coords = g.getRandomXY();
 
-        //    Highlander player1 = new Highlander(player1Coords[0], player1Coords[1], true, "");
-        //    Highlander player2 = new Highlander(player2Coords[0], player2Coords[1], true, "");
+            Highlander player1 = new Highlander(player1Coords[0], player1Coords[1], true);
+            Highlander player2 = new Highlander(player2Coords[0], player2Coords[1], true);
 
-        //    list.Add(player1);
-        //    list.Add(player2);
+            list.Add(player1);
+            list.Add(player2);
 
-        //    g.setPlayerList(list);
-        //    g.gridUpdate();
+            g.setPlayerList(list);
+            g.gridUpdate();
 
-        //    g.verbosePlayerPrint();
+            g.verbosePlayerPrint();
 
-        //    Console.WriteLine("Width: " + g.width);
-        //    Console.WriteLine("Height: " + g.height);
-
-
-        //    Console.WriteLine("Repeated Print started...");
-
-        //    // run 5 times, moving randomly and printing position each iteration
-        //    for (int x = 0; x < 5; x++)
-        //    {
-        //        player1.MoveRandomly(g.width, g.height);
-        //        player2.MoveRandomly(g.width, g.height);
-
-        //        g.gridUpdate();
-        //        g.verbosePlayerPrint();
-        //    }
-
-        //    Console.WriteLine("Repeated print ended...");
-        //}
-
-        //static void moveRandomlyBoundsDetectionTest()
-        //{
-
-        //    Grid g = new Grid(20, 20);
-        //    g.initGrid();
+            Console.WriteLine("Width: " + g.width);
+            Console.WriteLine("Height: " + g.height);
 
 
-        //    Highlander player1 = new Highlander(0, 0, true, "test");
+            Console.WriteLine("Repeated Print started...");
 
-        //    g.placePlayer(player1);
+            // run 5 times, moving randomly and printing position each iteration
+            for (int x = 0; x < 5; x++)
+            {
+                player1.MoveRandomly(g.width, g.height);
+                player2.MoveRandomly(g.width, g.height);
 
-        //    g.gridUpdate();
+                g.gridUpdate();
+                g.verbosePlayerPrint();
+            }
 
-        //    g.verbosePlayerPrint();
+            Console.WriteLine("Repeated print ended...");
+        }
+
+        static void moveRandomlyBoundsDetectionTest()
+        {
+
+            Grid g = new Grid(20, 20);
+            g.initGrid();
 
 
-        //    // run 5 times, moving randomly and printing position each iteration
-        //    for (int x = 0; x < 50; x++)
-        //    {
-        //        player1.MoveRandomly(g.width, g.height);
+            Highlander player1 = new Highlander(0, 0, true);
+
+            g.placePlayer(player1);
+
+            g.gridUpdate();
+
+            g.verbosePlayerPrint();
+
+
+            // run 5 times, moving randomly and printing position each iteration
+            for (int x = 0; x < 50; x++)
+            {
+                player1.MoveRandomly(g.width, g.height);
                 
-        //        g.gridUpdate();
-        //        g.verbosePlayerPrint();
+                g.gridUpdate();
+                g.verbosePlayerPrint();
 
-        //    }
-        //}
+            }
+        }
 
-        //static void twoHighlanderFightTest()
-        //{
-        //    Grid g = new Grid(10, 10);
-        //    g.initGrid();
+        static void twoHighlanderFightTest()
+        {
+            Grid g = new Grid(10, 10);
+            g.initGrid();
 
-        //    Highlander h1 = new Highlander(g.getRandomXY(), true, "");
-        //    Highlander h2 = new Highlander(g.getRandomXY(), true, "");
+            Highlander h1 = new Highlander(g.getRandomXY(), true, "");
+            Highlander h2 = new Highlander(g.getRandomXY(), true, "");
 
-        //    g.placePlayer(h1);
-        //    g.placePlayer(h2);
+            g.placePlayer(h1);
+            g.placePlayer(h2);
 
-        //    g.gridUpdate();
+            g.gridUpdate();
 
-        //    for (int x = 0; x < 100; x++)
-        //    {
-        //        // unfinished
-        //    }
-
-
-        //}
-
-        //// WIP
-        //static void routineTest()
-        //{
-
-        //    Grid g = new Grid(10, 10);
-        //    g.initGrid();
+            for (int x = 0; x < 100; x++)
+            {
+                // unfinished
+            }
 
 
+        }
 
-        //    Highlander h1 = new Highlander(g.getRandomXY(), true, "");
-        //    Highlander h2 = new Highlander(0, 0, false, "");
+        // WIP
+        static void routineTest()
+        {
 
-        //    Console.WriteLine("h1 debug:");
-        //    Console.WriteLine("X: {0}\nY: {1}", h1.X, h1.Y); 
+            Grid g = new Grid(10, 10);
+            g.initGrid();
 
 
-        //    g.placePlayer(h1);
 
-        //    Console.WriteLine("Grid after first player --- ");
-        //    g.printGrid();
+            Highlander h1 = new Highlander(g.getRandomXY(), true);
+            Highlander h2 = new Highlander(0, 0, false);
+
+            Console.WriteLine("h1 debug:");
+            Console.WriteLine("X: {0}\nY: {1}", h1.X, h1.Y); 
+
+
+            g.placePlayer(h1);
+
+            Console.WriteLine("Grid after first player --- ");
+            g.printGrid();
 
             
-        //    g.placePlayer(h2);
+            g.placePlayer(h2);
 
-        //    Console.WriteLine("Grid after second player --- ");
-        //    g.printGrid();
+            Console.WriteLine("Grid after second player --- ");
+            g.printGrid();
 
-        //    //g.gridUpdate();
+            //g.gridUpdate();
 
-        //    Console.WriteLine(g.currentNumOfPlayers());
+            Console.WriteLine(g.currentNumOfPlayers());
 
 
-        //    Console.WriteLine("\n\n-- BEGIN -- \n\n");
+            Console.WriteLine("\n\n-- BEGIN -- \n\n");
 
-        //    for (int x = 0; x < 10; x++)
-        //    {
+            for (int x = 0; x < 10; x++)
+            {
 
-        //        g.verbosePlayerPrint();
+                g.verbosePlayerPrint();
 
-        //        h1.MoveRandomly(g.width, g.height);
+                h1.MoveRandomly(g.width, g.height);
 
-        //        // conditional for fight event
-        //        if (!g.isSpaceOpen(h1.X, h1.Y))
-        //        {
-        //            Console.WriteLine("Collision Detected...");
-        //            if (Highlander.fight(h1, h2))
-        //            {
+                // conditional for fight event
+                if (!g.isSpaceOpen(h1.X, h1.Y))
+                {
+                    Console.WriteLine("Collision Detected...");
+                    if (Highlander.fight(h1, h2))
+                    {
                         
-        //                Console.WriteLine("h1 removed!");
-        //                g.removeHighlander(h1);
-        //            } else
-        //            {
-        //                Console.WriteLine("h2 removed!");
-        //                g.removeHighlander(h2);
-        //            }
-        //        }
+                        Console.WriteLine("h1 removed!");
+                        g.removeHighlander(h1);
+                    } else
+                    {
+                        Console.WriteLine("h2 removed!");
+                        g.removeHighlander(h2);
+                    }
+                }
 
-        //        g.gridUpdate();
-        //        g.printGrid();
-        //    }
+                g.gridUpdate();
+                g.printGrid();
+            }
 
-        //}
+        }
 
         
 

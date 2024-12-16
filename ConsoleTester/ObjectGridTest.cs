@@ -95,7 +95,7 @@ namespace ConsoleTester
         {
 
             Highlander player1 = new Highlander(1,1, true);
-            Highlander player2 = new Highlander(0, 0, false);
+            Highlander player2 = new Highlander(0, 1, false);
 
             const int width = 10;
             const int height = 10;
@@ -126,7 +126,7 @@ namespace ConsoleTester
         {
 
             Highlander player1 = new Highlander(1,1, true);
-            Highlander player2 = new Highlander(5, 5, true);
+            Highlander player2 = new Highlander(5, 6, true);
 
             const int width = 10;
             const int height = 10;
@@ -169,7 +169,7 @@ namespace ConsoleTester
         public static void PlayerFightTest2()
         {
             Highlander player1 = new Highlander(1,1, true);
-            Highlander player2 = new Highlander(5, 5, true);
+            Highlander player2 = new Highlander(5, 6, true);
 
             const int width = 10;
             const int height = 10;
