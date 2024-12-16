@@ -1,149 +1,166 @@
 ﻿using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+using HighlanderDB;
 
 namespace HighlanderMovements
 {
     public class Highlander
     {
-        // constants 
+        // Constants
         const int _health = 100;
         const int _power = 5;
         const int _powerIncrement = 5;
 
-        // instance variables, highlander traits 
+        // Static Random instance for shared randomness
+        private static readonly Random rand = new Random();
 
-        public string Name { get; set; }
-        public int Health { get; private set; } = _health; // default health
-        public int Power { get; private set; } = _power; // default value, can be changed
+        // Random name pool
+        public static string[] names = { "Bjorn", "Felix", "Terence", "Elliot", "Hammad", "Leeman", "Russ", "Amanda", "Horus", "Perturabo", "Lupercal", "Arvid", "Scott", "David", "Jacob", "Dexter", "Orm" };
+
+        // Highlander traits
+        public int ID { get; set; }
+        public int health { get; private set; } = _health;
+        public int power { get; private set; } = _power;
+
         public bool IsGood { get; private set; }
-        public bool IsAlive => Health > 0;
+        public int age { get; private set; }
+        public string name { get; private set; }
+        public int kills { get; private set; }
+
+        public bool IsAlive => health > 0;
 
         public int X { get; private set; }
         public int Y { get; private set; }
-
         public int prevX { get; private set; }
         public int prevY { get; private set; }
 
-        private Boolean setPrevCoordPace = false;
-        private Random rand;
+        private bool setPrevCoordPace = false;
 
-        public Highlander(int startX, int startY, bool isGood, string name)
+
+
+        // Static Random Generators
+        public static int GenerateRandomAge() => rand.Next(18, 101);
+        public static string GenerateRandomName() => names[rand.Next(names.Length)];
+
+        // Constructor
+        public Highlander(int startX, int startY, bool isGood)
         {
             X = startX;
             Y = startY;
-
             prevX = startX;
             prevY = startY;
 
             IsGood = isGood;
-
-            rand = new Random();
-            Name = name;
+            age = GenerateRandomAge();
+            name = GenerateRandomName();
+            power = (_power + (age / 10));
         }
 
         public Highlander(int[] startCoords, bool isGood, string name)
         {
             X = startCoords[0];
             Y = startCoords[1];
-            this.IsGood = isGood;
-            rand = new Random();
-            this.Name = name;
+
+            IsGood = isGood;
+            age = GenerateRandomAge();
+            name = GenerateRandomName();
+            power = (_power + (age / 10));
         }
 
-        public bool isFirstPosition()
-        {
-            return this.setPrevCoordPace;
-        }
-
-        // when a highlander kills another highlander, run this 
+        // Combat methods
         public void HighlanderKill()
         {
-            this.Power += _powerIncrement;
+            power += _powerIncrement;
+            kills++;
         }
 
         public void TakeDamage(int damage)
         {
-            Health -= damage;
-            if (Health < 0) Health = 0;
+            health -= damage;
+            if (health < 0) health = 0;
         }
 
-        
-        private void OnMove()
+        public static bool fight(Highlander killer, Highlander victim, DatabaseManager dbManager)
         {
-            if (this.setPrevCoordPace)
+            Random random = new Random();
+
+            while (killer.IsAlive && victim.IsAlive)
             {
-                this.prevX = this.X;
-                this.prevY = this.Y;
+                int killerAttack = random.Next(1, 11) * killer.power;
+                int victimAttack = random.Next(1, 11) * victim.power;
+
+                victim.TakeDamage(killerAttack);
+                killer.TakeDamage(victimAttack);
+
+                Console.WriteLine($"{killer.name} attacks {victim.name} with {killerAttack} damage. {victim.name} health: {victim.health}");
+                Console.WriteLine($"{victim.name} attacks {killer.name} with {victimAttack} damage. {killer.name} health: {killer.health}");
+                Console.WriteLine("-----------------------");
             }
 
+            // Determine winner
+            if (killer.IsAlive)
+            {
+                Console.WriteLine($"{killer.name} wins!");
+                killer.HighlanderKill();
+
+                dbManager.RecordKill(killer.ID, victim.ID); // Log the kill in the database
+                return true;
+            }
+            else
+            {
+                Console.WriteLine($"{victim.name} wins!");
+                victim.HighlanderKill();
+                dbManager.RecordKill(victim.ID, killer.ID); // Log the kill in the database
+                return false;
+            }
         }
+
+
+        // Movement methods
+        private void OnMove()
+        {
+            if (setPrevCoordPace)
+            {
+                prevX = X;
+                prevY = Y;
+            }
+        }
+
+        public void MoveUp() { OnMove(); Y++; setPrevCoordPace = true; }
+        public void MoveDown() { OnMove(); Y--; setPrevCoordPace = true; }
+        public void MoveLeft() { OnMove(); X--; setPrevCoordPace = true; }
+        public void MoveRight() { OnMove(); X++; setPrevCoordPace = true; }
+        public void MoveDownRight() { OnMove(); X++; Y--; setPrevCoordPace = true; }
+        public void MoveDownLeft() { OnMove(); X--; Y--; setPrevCoordPace = true; }
+        public void MoveUpRight() { OnMove(); X++; Y++; setPrevCoordPace = true; }
+        public void MoveUpLeft() { OnMove(); X--; Y++; setPrevCoordPace = true; }
 
         public void MoveRandomly(int maxWidth, int maxHeight)
         {
             int direction = rand.Next(0, 8);
 
-            switch (direction) {
-                case 0:
-                    MoveRight();
-                    break;
-                case 1:
-                    MoveDownRight();
-                    break;
-                case 2:
-                    MoveDown();
-                    break;
-                case 3:
-                    MoveDownLeft();
-                    break;
-                case 4:
-                    MoveLeft();
-                    break;
-                case 5:
-                    MoveUpLeft();
-                    break;
-                case 6:
-                    MoveUp();
-                    break;
-                case 7:
-                    MoveUpRight();
-                    break;
+            switch (direction)
+            {
+                case 0: MoveRight(); break;
+                case 1: MoveDownRight(); break;
+                case 2: MoveDown(); break;
+                case 3: MoveDownLeft(); break;
+                case 4: MoveLeft(); break;
+                case 5: MoveUpLeft(); break;
+                case 6: MoveUp(); break;
+                case 7: MoveUpRight(); break;
             }
 
-            //Console.WriteLine("validating position [{0},{1}]", X, Y);
-            this.validateNewPosition(maxWidth, maxHeight);
-
+            ValidateNewPosition(maxWidth, maxHeight);
         }
 
-        private void validateNewPosition(int maxWidth, int maxHeight)
+        private void ValidateNewPosition(int maxWidth, int maxHeight)
         {
-            /* 2d Array Bound Validation */
+            if (X >= maxWidth) X = maxWidth - 1;
+            if (X < 0) X = 0;
 
-            // revert to prevX or prevY values
-            if (this.X == maxWidth || this.X == -1)
-            {
-                //Console.WriteLine("{0} is equal to {1}(maxWidth)", X, maxWidth);
-                this.X = (X < 0) ? 1 : maxWidth - 1 ;
-                Console.WriteLine("Validation failed...");
-                //this.MoveRandomly(maxWidth, maxHeight);
-            } else if (this.Y == maxHeight || this.Y == -1)
-            {
-                //Console.WriteLine("{0} is equal to {1}(maxHeight)", Y, maxHeight);
-                this.Y = (Y < 0) ? 1 : maxHeight - 1 ;
-                Console.WriteLine("Validation failed...");
-                //this.MoveRandomly(maxWidth, maxHeight);
-            }
-
-            Console.WriteLine("Validation passed...");
-
-            return;
-
+            if (Y >= maxHeight) Y = maxHeight - 1;
+            if (Y < 0) Y = 0;
         }
-
         public void revertPosition()
         {
             this.X = prevX; 
@@ -329,7 +346,6 @@ namespace HighlanderMovements
                 }
             }
         }
-
         
     }
 }
