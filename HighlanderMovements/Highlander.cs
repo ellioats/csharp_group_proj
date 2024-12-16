@@ -16,6 +16,8 @@ namespace HighlanderMovements
         const int _powerIncrement = 5;
 
         // instance variables, highlander traits 
+
+        public string Name { get; set; }
         public int Health { get; private set; } = _health; // default health
         public int Power { get; private set; } = _power; // default value, can be changed
         public bool IsGood { get; private set; }
@@ -30,7 +32,7 @@ namespace HighlanderMovements
         private Boolean setPrevCoordPace = false;
         private Random rand;
 
-        public Highlander(int startX, int startY, bool isGood)
+        public Highlander(int startX, int startY, bool isGood, string name)
         {
             X = startX;
             Y = startY;
@@ -41,14 +43,16 @@ namespace HighlanderMovements
             IsGood = isGood;
 
             rand = new Random();
+            Name = name;
         }
 
-        public Highlander(int[] startCoords, bool isGood)
+        public Highlander(int[] startCoords, bool isGood, string name)
         {
             X = startCoords[0];
             Y = startCoords[1];
             this.IsGood = isGood;
             rand = new Random();
+            this.Name = name;
         }
 
         public bool isFirstPosition()
@@ -138,6 +142,12 @@ namespace HighlanderMovements
 
             return;
 
+        }
+
+        public void revertPosition()
+        {
+            this.X = prevX; 
+            this.Y = prevY;
         }
 
         public void MoveUp() {
