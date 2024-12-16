@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\teren\\csharp_group_proj\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|C:\\Users\\teren\\csharp_group_proj\\highlandermovements\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13D7040B-B7B4-4E81-8A79-D5CA4E01B5B7}|Highlander DB\\HighlanderDB.csproj|c:\\users\\teren\\csharp_group_proj\\highlander db\\databasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D7040B-B7B4-4E81-8A79-D5CA4E01B5B7}|Highlander DB\\HighlanderDB.csproj|solutionrelative:highlander db\\databasehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|c:\\users\\teren\\csharp_group_proj\\highlandermovements\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|solutionrelative:highlandermovements\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13D7040B-B7B4-4E81-8A79-D5CA4E01B5B7}|Highlander DB\\HighlanderDB.csproj|c:\\users\\teren\\csharp_group_proj\\highlander db\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{705596F4-7239-45A7-AE6F-F084ABE5C55D}|ConsoleTester\\ConsoleTester.csproj|c:\\users\\teren\\csharp_group_proj\\consoletester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{705596F4-7239-45A7-AE6F-F084ABE5C55D}|ConsoleTester\\ConsoleTester.csproj|solutionrelative:consoletester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D7040B-B7B4-4E81-8A79-D5CA4E01B5B7}|Highlander DB\\HighlanderDB.csproj|C:\\Users\\teren\\csharp_group_proj\\highlander db\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13D7040B-B7B4-4E81-8A79-D5CA4E01B5B7}|Highlander DB\\HighlanderDB.csproj|solutionrelative:highlander db\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,12 +45,34 @@
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseHandler.cs",
+              "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\Highlander DB\\DatabaseHandler.cs",
+              "RelativeDocumentMoniker": "Highlander DB\\DatabaseHandler.cs",
+              "ToolTip": "C:\\Users\\teren\\csharp_group_proj\\Highlander DB\\DatabaseHandler.cs",
+              "RelativeToolTip": "Highlander DB\\DatabaseHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T16:46:12.191Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\ConsoleTester\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleTester\\Program.cs",
+              "ToolTip": "C:\\Users\\teren\\csharp_group_proj\\ConsoleTester\\Program.cs",
+              "RelativeToolTip": "ConsoleTester\\Program.cs",
+              "ViewState": "AgIAAB8BAAAAAAAAAAA6wGEBAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T16:44:55.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DatabaseManager.cs",
               "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\Highlander DB\\DatabaseManager.cs",
               "RelativeDocumentMoniker": "Highlander DB\\DatabaseManager.cs",
@@ -50,12 +80,11 @@
               "RelativeToolTip": "Highlander DB\\DatabaseManager.cs",
               "ViewState": "AgIAAM4AAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T16:24:39.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T16:24:39.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Highlander.cs",
               "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\HighlanderMovements\\Highlander.cs",
               "RelativeDocumentMoniker": "HighlanderMovements\\Highlander.cs",

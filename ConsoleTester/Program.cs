@@ -19,8 +19,16 @@ namespace ConsoleTester
             //gameLoopTest1();
             //moveRandomly10x();
             //moveRandomlyBoundsDetectionTest();
-            routineTest();
+            //routineTest();
 
+            //ObjectGridTest.gridPrintTest();
+            //ObjectGridTest.gridPrintTestWithPlayer();
+            //ObjectGridTest.gridPlayerMoveTest();
+            //ObjectGridTest.gridPlayerRandomMoveTest();
+            //ObjectGridTest.twoPlayerCollisionTestUnMoving();
+            //ObjectGridTest.GridPlayerPrintTest();
+            //ObjectGridTest.GridPlayerRemoveTest();
+            ObjectGridTest.RoutineTest2Player();
 
             Console.Read();
         }
@@ -139,7 +147,7 @@ namespace ConsoleTester
 
             printArea(area);
 
-            HighlanderMovements.Highlander highlander = new HighlanderMovements.Highlander(1, 2, true);
+            HighlanderMovements.Highlander highlander = new HighlanderMovements.Highlander(1, 2, true, "Womper chomper");
 
             HighlanderMovements.Class1.MoveRandomly(ref area, ref highlander);
 
@@ -158,7 +166,7 @@ namespace ConsoleTester
             g.initGrid();
 
             
-            Highlander h1 = new Highlander(5,5, true);
+            Highlander h1 = new Highlander(5,5, true, "test");
 
             // player is placed at position 5,5
             g.placePlayer(h1);
@@ -205,7 +213,7 @@ namespace ConsoleTester
             for (int x = 0; x < numberOfHighlanders; x++)
             {
                 int[] coords = g.getRandomXY();
-                list.Add(new Highlander(coords[0], coords[1], true));
+                list.Add(new Highlander(coords[0], coords[1], true, ""));
             }
 
             // set grid player list 
@@ -228,8 +236,8 @@ namespace ConsoleTester
             int[] player1Coords = g.getRandomXY();
             int[] player2Coords = g.getRandomXY();
 
-            Highlander player1 = new Highlander(player1Coords[0], player1Coords[1], true);
-            Highlander player2 = new Highlander(player2Coords[0], player2Coords[1], true);
+            Highlander player1 = new Highlander(player1Coords[0], player1Coords[1], true, "");
+            Highlander player2 = new Highlander(player2Coords[0], player2Coords[1], true, "");
 
             list.Add(player1);
             list.Add(player2);
@@ -265,7 +273,7 @@ namespace ConsoleTester
             g.initGrid();
 
 
-            Highlander player1 = new Highlander(0, 0, true);
+            Highlander player1 = new Highlander(0, 0, true, "test");
 
             g.placePlayer(player1);
 
@@ -290,8 +298,8 @@ namespace ConsoleTester
             Grid g = new Grid(10, 10);
             g.initGrid();
 
-            Highlander h1 = new Highlander(g.getRandomXY(), true);
-            Highlander h2 = new Highlander(g.getRandomXY(), true);
+            Highlander h1 = new Highlander(g.getRandomXY(), true, "");
+            Highlander h2 = new Highlander(g.getRandomXY(), true, "");
 
             g.placePlayer(h1);
             g.placePlayer(h2);
@@ -315,8 +323,8 @@ namespace ConsoleTester
 
 
 
-            Highlander h1 = new Highlander(g.getRandomXY(), true);
-            Highlander h2 = new Highlander(0, 0, false);
+            Highlander h1 = new Highlander(g.getRandomXY(), true, "");
+            Highlander h2 = new Highlander(0, 0, false, "");
 
             Console.WriteLine("h1 debug:");
             Console.WriteLine("X: {0}\nY: {1}", h1.X, h1.Y); 

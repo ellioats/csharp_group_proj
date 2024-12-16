@@ -8,15 +8,50 @@
     ".NETCoreApp,Version=v8.0": {
       "GroupProjectCSharp/1.0.0": {
         "dependencies": {
-          "HighlanderMovements": "1.0.0"
+          "ConsoleTester": "1.0.0",
+          "Game": "1.0.0",
+          "HighlanderMovements": "1.0.0",
+          "Simulation": "1.0.0"
         },
         "runtime": {
           "GroupProjectCSharp.dll": {}
         }
       },
+      "ConsoleTester/1.0.0": {
+        "dependencies": {
+          "Game": "1.0.0",
+          "HighlanderMovements": "1.0.0",
+          "Simulation": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleTester.exe": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Game/1.0.0": {
+        "dependencies": {
+          "HighlanderMovements": "1.0.0"
+        },
+        "runtime": {
+          "Game.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "HighlanderMovements/1.0.0": {
         "runtime": {
           "HighlanderMovements.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Simulation/1.0.0": {
+        "runtime": {
+          "Simulation.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -30,7 +65,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "ConsoleTester/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Game/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "HighlanderMovements/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Simulation/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

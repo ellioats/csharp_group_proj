@@ -1,18 +1,63 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\teren\\csharp_group_proj\\",
+  "WorkspaceRootPath": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{705596F4-7239-45A7-AE6F-F084ABE5C55D}|ConsoleTester\\ConsoleTester.csproj|c:\\users\\teren\\csharp_group_proj\\consoletester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{705596F4-7239-45A7-AE6F-F084ABE5C55D}|ConsoleTester\\ConsoleTester.csproj|solutionrelative:consoletester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|c:\\users\\teren\\csharp_group_proj\\highlandermovements\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|C:\\Users\\teren\\csharp_group_proj\\highlandermovements\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|solutionrelative:highlandermovements\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13D7040B-B7B4-4E81-8A79-D5CA4E01B5B7}|Highlander DB\\HighlanderDB.csproj|C:\\Users\\teren\\csharp_group_proj\\highlander db\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13D7040B-B7B4-4E81-8A79-D5CA4E01B5B7}|Highlander DB\\HighlanderDB.csproj|c:\\users\\teren\\csharp_group_proj\\highlander db\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13D7040B-B7B4-4E81-8A79-D5CA4E01B5B7}|Highlander DB\\HighlanderDB.csproj|solutionrelative:highlander db\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|c:\\users\\hamma\\source\\repos\\csharp_group_proj\\highlandermovements\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|solutionrelative:highlandermovements\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\highlandermovements\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|solutionrelative:highlandermovements\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|c:\\users\\hamma\\source\\repos\\csharp_group_proj\\groupprojectcsharp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|solutionrelative:groupprojectcsharp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06118C2F-17FB-4CDB-8547-31D8570416C6}|Simulation\\Simulation.csproj|C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\simulation\\simulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06118C2F-17FB-4CDB-8547-31D8570416C6}|Simulation\\Simulation.csproj|solutionrelative:simulation\\simulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{705596F4-7239-45A7-AE6F-F084ABE5C55D}|ConsoleTester\\ConsoleTester.csproj|C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\consoletester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{705596F4-7239-45A7-AE6F-F084ABE5C55D}|ConsoleTester\\ConsoleTester.csproj|solutionrelative:consoletester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|c:\\users\\hamma\\source\\repos\\csharp_group_proj\\groupprojectcsharp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|solutionrelative:groupprojectcsharp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B327CC3D-039D-4BCE-9732-F1656BDC9864}|Game\\Game.csproj|C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\game\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B327CC3D-039D-4BCE-9732-F1656BDC9864}|Game\\Game.csproj|solutionrelative:game\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|c:\\users\\hamma\\source\\repos\\csharp_group_proj\\groupprojectcsharp\\startpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|solutionrelative:groupprojectcsharp\\startpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|c:\\users\\hamma\\source\\repos\\csharp_group_proj\\groupprojectcsharp\\startpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|solutionrelative:groupprojectcsharp\\startpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06118C2F-17FB-4CDB-8547-31D8570416C6}|Simulation\\Simulation.csproj|C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\simulation\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06118C2F-17FB-4CDB-8547-31D8570416C6}|Simulation\\Simulation.csproj|solutionrelative:simulation\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|c:\\users\\hamma\\source\\repos\\csharp_group_proj\\groupprojectcsharp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|solutionrelative:groupprojectcsharp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|c:\\users\\hamma\\source\\repos\\csharp_group_proj\\groupprojectcsharp\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|solutionrelative:groupprojectcsharp\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> a8bc5a18e9a71da0862ee15c642f3788d073011d
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +67,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
+          "SelectedChildIndex": 6,
+=======
           "SelectedChildIndex": 4,
+>>>>>>> a8bc5a18e9a71da0862ee15c642f3788d073011d
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,21 +90,13 @@
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\ConsoleTester\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleTester\\Program.cs",
-              "ToolTip": "C:\\Users\\teren\\csharp_group_proj\\ConsoleTester\\Program.cs",
-              "RelativeToolTip": "ConsoleTester\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T16:41:39.068Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+<<<<<<< HEAD
+              "DocumentIndex": 1,
               "Title": "DatabaseManager.cs",
               "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\Highlander DB\\DatabaseManager.cs",
               "RelativeDocumentMoniker": "Highlander DB\\DatabaseManager.cs",
@@ -63,11 +104,24 @@
               "RelativeToolTip": "Highlander DB\\DatabaseManager.cs",
               "ViewState": "AgIAAM4AAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T16:24:39.868Z"
+              "WhenOpened": "2024-12-16T16:24:39.868Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "Highlander.cs",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\HighlanderMovements\\Highlander.cs",
+              "RelativeDocumentMoniker": "HighlanderMovements\\Highlander.cs",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\HighlanderMovements\\Highlander.cs",
+              "RelativeToolTip": "HighlanderMovements\\Highlander.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAkwAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T18:36:38.272Z",
+>>>>>>> a8bc5a18e9a71da0862ee15c642f3788d073011d
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+<<<<<<< HEAD
+              "DocumentIndex": 0,
               "Title": "Highlander.cs",
               "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\HighlanderMovements\\Highlander.cs",
               "RelativeDocumentMoniker": "HighlanderMovements\\Highlander.cs",
@@ -77,6 +131,138 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T10:52:44.077Z",
               "EditorCaption": ""
+=======
+              "DocumentIndex": 11,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "GroupProjectCSharp\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\AssemblyInfo.cs",
+              "RelativeToolTip": "GroupProjectCSharp\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T18:32:14.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GroupProjectCSharp\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "GroupProjectCSharp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T18:29:47.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StartPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\StartPage.xaml.cs",
+              "RelativeDocumentMoniker": "GroupProjectCSharp\\StartPage.xaml.cs",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\StartPage.xaml.cs",
+              "RelativeToolTip": "GroupProjectCSharp\\StartPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T18:27:34.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "GroupProjectCSharp\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\MainWindow.xaml",
+              "RelativeToolTip": "GroupProjectCSharp\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-15T18:25:26.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StartPage.xaml",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\StartPage.xaml",
+              "RelativeDocumentMoniker": "GroupProjectCSharp\\StartPage.xaml",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\StartPage.xaml",
+              "RelativeToolTip": "GroupProjectCSharp\\StartPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-15T18:26:29.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\App.xaml",
+              "RelativeDocumentMoniker": "GroupProjectCSharp\\App.xaml",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\App.xaml",
+              "RelativeToolTip": "GroupProjectCSharp\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-15T18:32:18.204Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Grid.cs",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\Game\\Grid.cs",
+              "RelativeDocumentMoniker": "Game\\Grid.cs",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\Game\\Grid.cs",
+              "RelativeToolTip": "Game\\Grid.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAxwNAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T18:51:50.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\HighlanderMovements\\Class1.cs",
+              "RelativeDocumentMoniker": "HighlanderMovements\\Class1.cs",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\HighlanderMovements\\Class1.cs",
+              "RelativeToolTip": "HighlanderMovements\\Class1.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T18:48:49.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\ConsoleTester\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleTester\\Program.cs",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\ConsoleTester\\Program.cs",
+              "RelativeToolTip": "ConsoleTester\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwDQAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T18:37:07.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Simulation.cs",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\Simulation\\Simulation.cs",
+              "RelativeDocumentMoniker": "Simulation\\Simulation.cs",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\Simulation\\Simulation.cs",
+              "RelativeToolTip": "Simulation\\Simulation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T18:35:53.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Highlander.cs",
+              "DocumentMoniker": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\Simulation\\Highlander.cs",
+              "RelativeDocumentMoniker": "Simulation\\Highlander.cs",
+              "ToolTip": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\Simulation\\Highlander.cs",
+              "RelativeToolTip": "Simulation\\Highlander.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T18:35:42.469Z"
+>>>>>>> a8bc5a18e9a71da0862ee15c642f3788d073011d
             }
           ]
         }
