@@ -2,6 +2,32 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
+      "ConsoleTester/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Game": "1.0.0",
+          "HighlanderMovements": "1.0.0",
+          "Simulation": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ConsoleTester.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConsoleTester.dll": {}
+        }
+      },
+      "Game/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HighlanderMovements": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Game.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Game.dll": {}
+        }
+      },
       "HighlanderMovements/1.0.0": {
         "type": "project",
         "compile": {
@@ -10,19 +36,46 @@
         "runtime": {
           "bin/placeholder/HighlanderMovements.dll": {}
         }
+      },
+      "Simulation/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Simulation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Simulation.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "ConsoleTester/1.0.0": {
+      "type": "project",
+      "path": "../ConsoleTester/ConsoleTester.csproj",
+      "msbuildProject": "../ConsoleTester/ConsoleTester.csproj"
+    },
+    "Game/1.0.0": {
+      "type": "project",
+      "path": "../Game/Game.csproj",
+      "msbuildProject": "../Game/Game.csproj"
+    },
     "HighlanderMovements/1.0.0": {
       "type": "project",
       "path": "../HighlanderMovements/HighlanderMovements.csproj",
       "msbuildProject": "../HighlanderMovements/HighlanderMovements.csproj"
+    },
+    "Simulation/1.0.0": {
+      "type": "project",
+      "path": "../Simulation/Simulation.csproj",
+      "msbuildProject": "../Simulation/Simulation.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "HighlanderMovements >= 1.0.0"
+      "ConsoleTester >= 1.0.0",
+      "Game >= 1.0.0",
+      "HighlanderMovements >= 1.0.0",
+      "Simulation >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -32,9 +85,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
+      "projectUniqueName": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
       "projectName": "GroupProjectCSharp",
-      "projectPath": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
+      "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
       "packagesPath": "C:\\Users\\hamma\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\obj\\",
       "projectStyle": "PackageReference",
@@ -57,8 +110,17 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj": {
-              "projectPath": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj"
+            "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\ConsoleTester\\ConsoleTester.csproj": {
+              "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\ConsoleTester\\ConsoleTester.csproj"
+            },
+            "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Game\\Game.csproj": {
+              "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Game\\Game.csproj"
+            },
+            "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj": {
+              "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj"
+            },
+            "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Simulation\\Simulation.csproj": {
+              "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Simulation\\Simulation.csproj"
             }
           }
         }

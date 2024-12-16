@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\
+C:\Users\hamma\Source\Repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\
 GroupProjectCSharp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\App.xaml
-11407045341
+C:\Users\hamma\Source\Repos\csharp_group_proj\GroupProjectCSharp\App.xaml
+22110546867
 
-6-252937890
-199-1468208572
-MainWindow.xaml;
+71987603611
+202337135005
+MainWindow.xaml;StartPage.xaml;
 
-False
+True
 

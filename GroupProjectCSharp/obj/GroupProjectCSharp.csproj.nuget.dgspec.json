@@ -1,15 +1,61 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj": {}
+    "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj": {
+    "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\ConsoleTester\\ConsoleTester.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\ConsoleTester\\ConsoleTester.csproj",
+        "projectName": "ConsoleTester",
+        "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\ConsoleTester\\ConsoleTester.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Game\\Game.csproj": {
+                "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Game\\Game.csproj"
+              },
+              "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj": {
+                "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj"
+              },
+              "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Simulation\\Simulation.csproj": {
+                "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Simulation\\Simulation.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Game\\Game.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Game\\Game.csproj",
+        "projectName": "Game",
+        "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Game\\Game.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj": {
+                "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
+        "projectUniqueName": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
         "projectName": "GroupProjectCSharp",
-        "projectPath": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
+        "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
         "packagesPath": "C:\\Users\\hamma\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\obj\\",
         "projectStyle": "PackageReference",
@@ -32,8 +78,17 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj": {
-                "projectPath": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj"
+              "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\ConsoleTester\\ConsoleTester.csproj": {
+                "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\ConsoleTester\\ConsoleTester.csproj"
+              },
+              "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Game\\Game.csproj": {
+                "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Game\\Game.csproj"
+              },
+              "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj": {
+                "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj"
+              },
+              "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Simulation\\Simulation.csproj": {
+                "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Simulation\\Simulation.csproj"
               }
             }
           }
@@ -76,11 +131,27 @@
         }
       }
     },
-    "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj": {
+    "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj",
+        "projectUniqueName": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj",
         "projectName": "HighlanderMovements",
-        "projectPath": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj",
+        "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\HighlanderMovements\\HighlanderMovements.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Simulation\\Simulation.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Simulation\\Simulation.csproj",
+        "projectName": "Simulation",
+        "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Simulation\\Simulation.csproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net472": {

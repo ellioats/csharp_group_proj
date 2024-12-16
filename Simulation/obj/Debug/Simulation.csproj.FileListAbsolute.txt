@@ -19,3 +19,9 @@ C:\Users\hamma\Source\Repos\csharp_group_proj_working\Simulation\obj\Debug\Simul
 C:\Users\hamma\Source\Repos\csharp_group_proj_working\Simulation\obj\Debug\Simulation.dll
 C:\Users\hamma\Source\Repos\csharp_group_proj_working\Simulation\obj\Debug\Simulation.pdb
 >>>>>>> 020615946e11b3e6383925facd02cf5ab1569db5
+C:\Users\hamma\source\repos\csharp_group_proj\Simulation\bin\Debug\Simulation.dll
+C:\Users\hamma\source\repos\csharp_group_proj\Simulation\bin\Debug\Simulation.pdb
+C:\Users\hamma\source\repos\csharp_group_proj\Simulation\obj\Debug\Simulation.csproj.AssemblyReference.cache
+C:\Users\hamma\source\repos\csharp_group_proj\Simulation\obj\Debug\Simulation.csproj.CoreCompileInputs.cache
+C:\Users\hamma\source\repos\csharp_group_proj\Simulation\obj\Debug\Simulation.dll
+C:\Users\hamma\source\repos\csharp_group_proj\Simulation\obj\Debug\Simulation.pdb
