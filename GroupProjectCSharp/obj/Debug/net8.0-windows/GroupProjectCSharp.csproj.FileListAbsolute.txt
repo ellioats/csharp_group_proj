@@ -23,6 +23,42 @@ C:\Users\emwcu\source\repos\GroupProjectCSharp\GroupProjectCSharp\obj\Debug\net8
 C:\Users\emwcu\source\repos\GroupProjectCSharp\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.pdb
 C:\Users\emwcu\source\repos\GroupProjectCSharp\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.genruntimeconfig.cache
 C:\Users\emwcu\source\repos\GroupProjectCSharp\GroupProjectCSharp\obj\Debug\net8.0-windows\ref\GroupProjectCSharp.dll
+<<<<<<< HEAD
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.csproj.AssemblyReference.cache
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp_MarkupCompile.cache
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.dll
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\refint\GroupProjectCSharp.dll
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.pdb
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\GroupProjectCSharp.exe
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\GroupProjectCSharp.deps.json
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\GroupProjectCSharp.runtimeconfig.json
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\GroupProjectCSharp.dll
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\GroupProjectCSharp.pdb
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\HighlanderMovements.dll
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\HighlanderMovements.pdb
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\StartPage.g.cs
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp_MarkupCompile.lref
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\StartPage.baml
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.g.resources
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.AssemblyInfoInputs.cache
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.AssemblyInfo.cs
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.csproj.CoreCompileInputs.cache
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.sourcelink.json
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupPro.85AEF1B2.Up2Date
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.genruntimeconfig.cache
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\ref\GroupProjectCSharp.dll
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\ConsoleTester.exe
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\Game.dll
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\Simulation.dll
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\ConsoleTester.pdb
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\ConsoleTester.exe.config
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\Game.pdb
+C:\Users\hamma\source\repos\csharp_group_proj\GroupProjectCSharp\bin\Debug\net8.0-windows\Simulation.pdb
+=======
 C:\Users\teren\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.csproj.AssemblyReference.cache
 C:\Users\teren\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\teren\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\App.g.cs
@@ -31,3 +67,4 @@ C:\Users\teren\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\Gro
 C:\Users\teren\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.dll
 C:\Users\teren\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\refint\GroupProjectCSharp.dll
 C:\Users\teren\csharp_group_proj\GroupProjectCSharp\obj\Debug\net8.0-windows\GroupProjectCSharp.pdb
+>>>>>>> d6bdba949408eef0bd2b1a6c0c7c1115f6320b75

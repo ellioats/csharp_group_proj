@@ -1,6 +1,20 @@
 {
   "ExpandedNodes": [
+<<<<<<< HEAD
     ""
+=======
+<<<<<<< HEAD
+    "",
+    "\\HighlanderMovements"
+=======
+<<<<<<< HEAD
+    "",
+    "\\ConsoleTester"
+=======
+    ""
+>>>>>>> b381e35edacce0cd66a2a606046345691e23e186
+>>>>>>> a8bc5a18e9a71da0862ee15c642f3788d073011d
+>>>>>>> 6e530375c01a14c87ed063614f42b85bb8978fa4
   ],
   "SelectedNode": "\\GroupProjectCSharp.sln",
   "PreviewInSolutionExplorer": false

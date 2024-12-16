@@ -4,6 +4,50 @@
     "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\GroupProjectCSharp.csproj": {}
   },
   "projects": {
+    "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\ConsoleTester\\ConsoleTester.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\ConsoleTester\\ConsoleTester.csproj",
+        "projectName": "ConsoleTester",
+        "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\ConsoleTester\\ConsoleTester.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Game\\Game.csproj": {
+                "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Game\\Game.csproj"
+              },
+              "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj": {
+                "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj"
+              },
+              "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Simulation\\Simulation.csproj": {
+                "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Simulation\\Simulation.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Game\\Game.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Game\\Game.csproj",
+        "projectName": "Game",
+        "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Game\\Game.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj": {
+                "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\GroupProjectCSharp.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -33,8 +77,17 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
+              "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\ConsoleTester\\ConsoleTester.csproj": {
+                "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\ConsoleTester\\ConsoleTester.csproj"
+              },
+              "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Game\\Game.csproj": {
+                "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Game\\Game.csproj"
+              },
               "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj": {
                 "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj"
+              },
+              "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Simulation\\Simulation.csproj": {
+                "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Simulation\\Simulation.csproj"
               }
             }
           }
@@ -76,11 +129,45 @@
         }
       }
     },
+    "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Highlander DB\\HighlanderDB.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Highlander DB\\HighlanderDB.csproj",
+        "projectName": "HighlanderDB",
+        "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Highlander DB\\HighlanderDB.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj": {
       "restore": {
         "projectUniqueName": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj",
         "projectName": "HighlanderMovements",
         "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Highlander DB\\HighlanderDB.csproj": {
+                "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Highlander DB\\HighlanderDB.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Simulation\\Simulation.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Simulation\\Simulation.csproj",
+        "projectName": "Simulation",
+        "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Simulation\\Simulation.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}

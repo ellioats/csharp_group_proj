@@ -9,7 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ConsoleTester\ConsoleTester.csproj" />
+    <ProjectReference Include="..\Game\Game.csproj" />
     <ProjectReference Include="..\HighlanderMovements\HighlanderMovements.csproj" />
+    <ProjectReference Include="..\Simulation\Simulation.csproj" />
   </ItemGroup>
 
 </Project>

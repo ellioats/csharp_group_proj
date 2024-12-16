@@ -2,27 +2,97 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
+      "ConsoleTester/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Game": "1.0.0",
+          "HighlanderMovements": "1.0.0",
+          "Simulation": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ConsoleTester.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConsoleTester.dll": {}
+        }
+      },
+      "Game/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "HighlanderMovements": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Game.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Game.dll": {}
+        }
+      },
+      "HighlanderDB/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HighlanderDB.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HighlanderDB.dll": {}
+        }
+      },
       "HighlanderMovements/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "HighlanderDB": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/HighlanderMovements.dll": {}
         },
         "runtime": {
           "bin/placeholder/HighlanderMovements.dll": {}
         }
+      },
+      "Simulation/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Simulation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Simulation.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "ConsoleTester/1.0.0": {
+      "type": "project",
+      "path": "../ConsoleTester/ConsoleTester.csproj",
+      "msbuildProject": "../ConsoleTester/ConsoleTester.csproj"
+    },
+    "Game/1.0.0": {
+      "type": "project",
+      "path": "../Game/Game.csproj",
+      "msbuildProject": "../Game/Game.csproj"
+    },
+    "HighlanderDB/1.0.0": {
+      "type": "project",
+      "path": "../Highlander DB/HighlanderDB.csproj",
+      "msbuildProject": "../Highlander DB/HighlanderDB.csproj"
+    },
     "HighlanderMovements/1.0.0": {
       "type": "project",
       "path": "../HighlanderMovements/HighlanderMovements.csproj",
       "msbuildProject": "../HighlanderMovements/HighlanderMovements.csproj"
+    },
+    "Simulation/1.0.0": {
+      "type": "project",
+      "path": "../Simulation/Simulation.csproj",
+      "msbuildProject": "../Simulation/Simulation.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "HighlanderMovements >= 1.0.0"
+      "ConsoleTester >= 1.0.0",
+      "Game >= 1.0.0",
+      "HighlanderMovements >= 1.0.0",
+      "Simulation >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -58,8 +128,17 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
+            "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\ConsoleTester\\ConsoleTester.csproj": {
+              "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\ConsoleTester\\ConsoleTester.csproj"
+            },
+            "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Game\\Game.csproj": {
+              "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Game\\Game.csproj"
+            },
             "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj": {
               "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj"
+            },
+            "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Simulation\\Simulation.csproj": {
+              "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Simulation\\Simulation.csproj"
             }
           }
         }

@@ -7,6 +7,17 @@ C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.csproj.CoreCo
 C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.csproj.Up2Date
 C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.dll
 C:\Users\emwcu\source\repos\GroupProjectCSharp\Game\obj\Debug\Game.pdb
+<<<<<<< HEAD
+C:\Users\hamma\source\repos\csharp_group_proj\Game\bin\Debug\Game.dll
+C:\Users\hamma\source\repos\csharp_group_proj\Game\bin\Debug\Game.pdb
+C:\Users\hamma\source\repos\csharp_group_proj\Game\bin\Debug\HighlanderMovements.dll
+C:\Users\hamma\source\repos\csharp_group_proj\Game\bin\Debug\HighlanderMovements.pdb
+C:\Users\hamma\source\repos\csharp_group_proj\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+C:\Users\hamma\source\repos\csharp_group_proj\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+C:\Users\hamma\source\repos\csharp_group_proj\Game\obj\Debug\Game.csproj.Up2Date
+C:\Users\hamma\source\repos\csharp_group_proj\Game\obj\Debug\Game.dll
+C:\Users\hamma\source\repos\csharp_group_proj\Game\obj\Debug\Game.pdb
+=======
 C:\Users\teren\csharp_group_proj\Game\bin\Debug\Game.dll
 C:\Users\teren\csharp_group_proj\Game\bin\Debug\Game.pdb
 C:\Users\teren\csharp_group_proj\Game\bin\Debug\HighlanderMovements.dll
@@ -16,3 +27,4 @@ C:\Users\teren\csharp_group_proj\Game\obj\Debug\Game.csproj.CoreCompileInputs.ca
 C:\Users\teren\csharp_group_proj\Game\obj\Debug\Game.csproj.Up2Date
 C:\Users\teren\csharp_group_proj\Game\obj\Debug\Game.dll
 C:\Users\teren\csharp_group_proj\Game\obj\Debug\Game.pdb
+>>>>>>> d6bdba949408eef0bd2b1a6c0c7c1115f6320b75

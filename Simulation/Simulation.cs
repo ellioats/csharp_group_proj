@@ -12,6 +12,7 @@ namespace Simulation
         private Random random;
         private int width;
         private int height;
+        private Action<string> log;
 
         public Simulation(int playerStartX, int playerStartY, int width, int height)
         {
@@ -20,6 +21,16 @@ namespace Simulation
             random = new Random();
             this.width = width;
             this.height = height;
+        }
+
+        public Simulation(int playerStartX, int playerStartY, int width, int height, Action<string> log)
+        {
+            player = new Highlander(playerStartX, playerStartY, true);
+            highlanders = new List<Highlander>();
+            random = new Random();
+            this.width = width;
+            this.height = height;
+            this.log = log;
         }
 
         public void AddHighlander(int startX, int startY, bool isGood)
