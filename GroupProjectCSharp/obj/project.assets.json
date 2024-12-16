@@ -79,23 +79,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hamma\\.nuget\\packages\\": {},
+    "C:\\Users\\emwcu\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
       "projectName": "GroupProjectCSharp",
       "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
       "packagesPath": "C:\\Users\\hamma\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\hamma\\source\\repos\\csharp_group_proj\\GroupProjectCSharp\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
+      "projectName": "GroupProjectCSharp",
+      "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
+      "packagesPath": "C:\\Users\\emwcu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\obj\\",
+>>>>>>> d6bdba949408eef0bd2b1a6c0c7c1115f6320b75
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\hamma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\emwcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -104,12 +112,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\ConsoleTester\\ConsoleTester.csproj": {
               "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\ConsoleTester\\ConsoleTester.csproj"
             },
@@ -121,6 +131,10 @@
             },
             "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Simulation\\Simulation.csproj": {
               "projectPath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\Simulation\\Simulation.csproj"
+=======
+            "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj": {
+              "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj"
+>>>>>>> d6bdba949408eef0bd2b1a6c0c7c1115f6320b75
             }
           }
         }
@@ -133,9 +147,8 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+        "auditMode": "direct"
+      }
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -159,7 +172,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

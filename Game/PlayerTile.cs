@@ -27,6 +27,17 @@ namespace Game
             return this.occupant;
         }
 
+        public void addPlayerToTile(HighlanderMovements.Highlander player)
+        {
+            base.isOccupied = true;
+            this.occupant = player;
+        }
+
+        public void setOccupant(HighlanderMovements.Highlander a)
+        {
+            this.occupant = a;
+        }
+
         
     }
 }

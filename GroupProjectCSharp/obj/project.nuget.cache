@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "oCeTH0JtIgU=",
   "success": true,
   "projectFilePath": "C:\\Users\\hamma\\Source\\Repos\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
+=======
+  "dgSpecHash": "tWBkb4Iin+0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
+>>>>>>> d6bdba949408eef0bd2b1a6c0c7c1115f6320b75
   "expectedPackageFiles": [],
   "logs": []
 }
