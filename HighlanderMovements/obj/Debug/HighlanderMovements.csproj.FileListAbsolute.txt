@@ -4,3 +4,9 @@ C:\Users\emwcu\source\repos\GroupProjectCSharp\HighlanderMovements\obj\Debug\Hig
 C:\Users\emwcu\source\repos\GroupProjectCSharp\HighlanderMovements\obj\Debug\HighlanderMovements.csproj.CoreCompileInputs.cache
 C:\Users\emwcu\source\repos\GroupProjectCSharp\HighlanderMovements\obj\Debug\HighlanderMovements.dll
 C:\Users\emwcu\source\repos\GroupProjectCSharp\HighlanderMovements\obj\Debug\HighlanderMovements.pdb
+C:\Users\teren\csharp_group_proj\HighlanderMovements\bin\Debug\HighlanderMovements.dll
+C:\Users\teren\csharp_group_proj\HighlanderMovements\bin\Debug\HighlanderMovements.pdb
+C:\Users\teren\csharp_group_proj\HighlanderMovements\obj\Debug\HighlanderMovements.csproj.AssemblyReference.cache
+C:\Users\teren\csharp_group_proj\HighlanderMovements\obj\Debug\HighlanderMovements.csproj.CoreCompileInputs.cache
+C:\Users\teren\csharp_group_proj\HighlanderMovements\obj\Debug\HighlanderMovements.dll
+C:\Users\teren\csharp_group_proj\HighlanderMovements\obj\Debug\HighlanderMovements.pdb
