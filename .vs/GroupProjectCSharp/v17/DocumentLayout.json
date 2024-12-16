@@ -3,31 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\teren\\csharp_group_proj\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{06118C2F-17FB-4CDB-8547-31D8570416C6}|Simulation\\Simulation.csproj|C:\\Users\\teren\\csharp_group_proj\\simulation\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06118C2F-17FB-4CDB-8547-31D8570416C6}|Simulation\\Simulation.csproj|solutionrelative:simulation\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|C:\\Users\\teren\\csharp_group_proj\\highlandermovements\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|solutionrelative:highlandermovements\\highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{705596F4-7239-45A7-AE6F-F084ABE5C55D}|ConsoleTester\\ConsoleTester.csproj|C:\\Users\\teren\\csharp_group_proj\\consoletester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{705596F4-7239-45A7-AE6F-F084ABE5C55D}|ConsoleTester\\ConsoleTester.csproj|solutionrelative:consoletester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06118C2F-17FB-4CDB-8547-31D8570416C6}|Simulation\\Simulation.csproj|C:\\Users\\teren\\csharp_group_proj\\simulation\\simulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06118C2F-17FB-4CDB-8547-31D8570416C6}|Simulation\\Simulation.csproj|solutionrelative:simulation\\simulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|c:\\users\\teren\\csharp_group_proj\\groupprojectcsharp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|solutionrelative:groupprojectcsharp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|c:\\users\\teren\\csharp_group_proj\\groupprojectcsharp\\groupprojectcsharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{978E4DE9-AAD2-412F-B6D0-57181EE1C370}|GroupProjectCSharp\\GroupProjectCSharp.csproj|solutionrelative:groupprojectcsharp\\groupprojectcsharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|C:\\Users\\teren\\csharp_group_proj\\highlandermovements\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{100FF2DB-BE47-418F-87B4-19BF45FDB410}|HighlanderMovements\\HighlanderMovements.csproj|solutionrelative:highlandermovements\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\Highlander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13D7040B-B7B4-4E81-8A79-D5CA4E01B5B7}|Highlander DB\\HighlanderDB.csproj|c:\\users\\teren\\csharp_group_proj\\highlander db\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D7040B-B7B4-4E81-8A79-D5CA4E01B5B7}|Highlander DB\\HighlanderDB.csproj|solutionrelative:highlander db\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -56,90 +37,34 @@
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\ConsoleTester\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleTester\\Program.cs",
-              "ToolTip": "C:\\Users\\teren\\csharp_group_proj\\ConsoleTester\\Program.cs",
-              "RelativeToolTip": "ConsoleTester\\Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowFoAAAA1AAAAAAAAAA==",
+              "Title": "DatabaseManager.cs",
+              "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\Highlander DB\\DatabaseManager.cs",
+              "RelativeDocumentMoniker": "Highlander DB\\DatabaseManager.cs",
+              "ToolTip": "C:\\Users\\teren\\csharp_group_proj\\Highlander DB\\DatabaseManager.cs",
+              "RelativeToolTip": "Highlander DB\\DatabaseManager.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:19:03.673Z",
+              "WhenOpened": "2024-12-16T16:24:39.868Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Highlander.cs",
-              "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\Simulation\\Highlander.cs",
-              "RelativeDocumentMoniker": "Simulation\\Highlander.cs",
-              "ToolTip": "C:\\Users\\teren\\csharp_group_proj\\Simulation\\Highlander.cs",
-              "RelativeToolTip": "Simulation\\Highlander.cs",
+              "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\HighlanderMovements\\Highlander.cs",
+              "RelativeDocumentMoniker": "HighlanderMovements\\Highlander.cs",
+              "ToolTip": "C:\\Users\\teren\\csharp_group_proj\\HighlanderMovements\\Highlander.cs",
+              "RelativeToolTip": "HighlanderMovements\\Highlander.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:19:03.965Z",
+              "WhenOpened": "2024-12-16T10:52:44.077Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Simulation.cs",
-              "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\Simulation\\Simulation.cs",
-              "RelativeDocumentMoniker": "Simulation\\Simulation.cs",
-              "ToolTip": "C:\\Users\\teren\\csharp_group_proj\\Simulation\\Simulation.cs",
-              "RelativeToolTip": "Simulation\\Simulation.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFEAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:19:03.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\GroupProjectCSharp\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GroupProjectCSharp\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\teren\\csharp_group_proj\\GroupProjectCSharp\\MainWindow.xaml.cs",
-              "RelativeToolTip": "GroupProjectCSharp\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:19:03.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\HighlanderMovements\\Class1.cs",
-              "RelativeDocumentMoniker": "HighlanderMovements\\Class1.cs",
-              "ToolTip": "C:\\Users\\teren\\csharp_group_proj\\HighlanderMovements\\Class1.cs",
-              "RelativeToolTip": "HighlanderMovements\\Class1.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAowE4AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:19:03.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Highlander.cs",
-              "DocumentMoniker": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\Highlander.cs",
-              "RelativeDocumentMoniker": "..\\..\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\Highlander.cs",
-              "ToolTip": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\Highlander.cs",
-              "RelativeToolTip": "..\\..\\emwcu\\source\\repos\\GroupProjectCSharp\\GroupProjectCSharp\\Highlander.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:19:04.022Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GroupProjectCSharp.csproj",
-              "DocumentMoniker": "C:\\Users\\teren\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
-              "RelativeDocumentMoniker": "GroupProjectCSharp\\GroupProjectCSharp.csproj",
-              "ToolTip": "C:\\Users\\teren\\csharp_group_proj\\GroupProjectCSharp\\GroupProjectCSharp.csproj",
-              "RelativeToolTip": "GroupProjectCSharp\\GroupProjectCSharp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-15T18:19:04.029Z"
             }
           ]
         }

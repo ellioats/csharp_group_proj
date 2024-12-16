@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GroupProjectCSharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e9df9f822e178ea1a0d65c1b291920f1a4f5194")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b381e35edacce0cd66a2a606046345691e23e186")]
 [assembly: System.Reflection.AssemblyProductAttribute("GroupProjectCSharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GroupProjectCSharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,8 +2,20 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
+      "HighlanderDB/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HighlanderDB.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HighlanderDB.dll": {}
+        }
+      },
       "HighlanderMovements/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "HighlanderDB": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/HighlanderMovements.dll": {}
         },
@@ -14,6 +26,11 @@
     }
   },
   "libraries": {
+    "HighlanderDB/1.0.0": {
+      "type": "project",
+      "path": "../Highlander DB/HighlanderDB.csproj",
+      "msbuildProject": "../Highlander DB/HighlanderDB.csproj"
+    },
     "HighlanderMovements/1.0.0": {
       "type": "project",
       "path": "../HighlanderMovements/HighlanderMovements.csproj",
