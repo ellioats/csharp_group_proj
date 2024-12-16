@@ -28,20 +28,8 @@
           "bin/placeholder/Game.dll": {}
         }
       },
-      "HighlanderDB/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/HighlanderDB.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HighlanderDB.dll": {}
-        }
-      },
       "HighlanderMovements/1.0.0": {
         "type": "project",
-        "dependencies": {
-          "HighlanderDB": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/HighlanderMovements.dll": {}
         },
@@ -70,11 +58,6 @@
       "type": "project",
       "path": "../Game/Game.csproj",
       "msbuildProject": "../Game/Game.csproj"
-    },
-    "HighlanderDB/1.0.0": {
-      "type": "project",
-      "path": "../Highlander DB/HighlanderDB.csproj",
-      "msbuildProject": "../Highlander DB/HighlanderDB.csproj"
     },
     "HighlanderMovements/1.0.0": {
       "type": "project",

@@ -152,18 +152,18 @@ namespace Game
                 else
                 {
 
-                    if (h.prevX == h.X && h.prevY == h.Y)
+                    if (h.prevX == h.X && h.PrevY == h.Y)
                     {
                         Console.WriteLine("Starting position detected, not changing");
                         return;
                     }
 
                     Console.WriteLine("DEBUG: {0} Highlander is not in correct position on grid ({1}, {2})...", (h.IsGood ? "Good" : "Evil"), h.X, h.Y);
-                    Console.WriteLine("Previous position was [{0}, {1}]", h.prevX, h.prevY);
+                    Console.WriteLine("Previous position was [{0}, {1}]", h.prevX, h.PrevY);
 
                     Console.WriteLine("\nSetting Orientation at [{0},{1}] to {2}", h.X, h.Y, (h.IsGood) ? "Good" : "Evil");
                     this.grid[h.X, h.Y] = (h.IsGood) ? "Good" : "Evil"; 
-                    this.grid[h.prevX, h.prevY] = "";
+                    this.grid[h.prevX, h.PrevY] = "";
                     //this.grid[h.X, h.Y] = (h.IsGood ? "Good" : "Evil");
                 }
             }

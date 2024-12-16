@@ -1,5 +1,5 @@
 ﻿using System;
-using HighlanderDB;
+using System.Collections.Generic;
 
 namespace HighlanderMovements
 {
@@ -18,20 +18,20 @@ namespace HighlanderMovements
 
         // Highlander traits
         public int ID { get; set; }
-        public int health { get; private set; } = _health;
-        public int power { get; private set; } = _power;
+        public int Health { get; private set; } = _health;
+        public int Power { get; private set; } = _power;
 
         public bool IsGood { get; private set; }
-        public int age { get; private set; }
-        public string name { get; private set; }
-        public int kills { get; private set; }
+        public int Age { get; private set; }
+        public string Name { get; private set; }
+        public int Kills { get; private set; }
 
-        public bool IsAlive => health > 0;
+        public bool IsAlive => Health > 0;
 
         public int X { get; private set; }
         public int Y { get; private set; }
         public int prevX { get; private set; }
-        public int prevY { get; private set; }
+        public int PrevY { get; private set; }
 
         private bool setPrevCoordPace = false;
 
@@ -47,69 +47,69 @@ namespace HighlanderMovements
             X = startX;
             Y = startY;
             prevX = startX;
-            prevY = startY;
+            PrevY = startY;
 
             IsGood = isGood;
-            age = GenerateRandomAge();
-            name = GenerateRandomName();
-            power = (_power + (age / 10));
+            Age = GenerateRandomAge();
+            Name = GenerateRandomName();
+            Power = (_power + (Age / 10));
         }
 
-        public Highlander(int[] startCoords, bool isGood, string name)
+        public Highlander(int[] startCoords, bool isGood)
         {
             X = startCoords[0];
             Y = startCoords[1];
 
             IsGood = isGood;
-            age = GenerateRandomAge();
-            name = GenerateRandomName();
-            power = (_power + (age / 10));
+            Age = GenerateRandomAge();
+            Name = GenerateRandomName();
+            Power = (_power + (Age / 10));
         }
 
         // Combat methods
         public void HighlanderKill()
         {
-            power += _powerIncrement;
-            kills++;
+            Power += _powerIncrement;
+            Kills++;
         }
 
         public void TakeDamage(int damage)
         {
-            health -= damage;
-            if (health < 0) health = 0;
+            Health -= damage;
+            if (Health < 0) Health = 0;
         }
 
-        public static bool fight(Highlander killer, Highlander victim, DatabaseManager dbManager)
+        public static bool fight(Highlander killer, Highlander victim)
         {
             Random random = new Random();
 
             while (killer.IsAlive && victim.IsAlive)
             {
-                int killerAttack = random.Next(1, 11) * killer.power;
-                int victimAttack = random.Next(1, 11) * victim.power;
+                int killerAttack = random.Next(1, 11) * killer.Power;
+                int victimAttack = random.Next(1, 11) * victim.Power;
 
                 victim.TakeDamage(killerAttack);
                 killer.TakeDamage(victimAttack);
 
-                Console.WriteLine($"{killer.name} attacks {victim.name} with {killerAttack} damage. {victim.name} health: {victim.health}");
-                Console.WriteLine($"{victim.name} attacks {killer.name} with {victimAttack} damage. {killer.name} health: {killer.health}");
+                Console.WriteLine($"{killer.Name} attacks {victim.Name} with {killerAttack} damage. {victim.Name} health: {victim.Health}");
+                Console.WriteLine($"{victim.Name}  attacks  {killer.Name}  with  {victimAttack}  damage.  {killer.Name} health: {killer.Health}");
                 Console.WriteLine("-----------------------");
             }
 
             // Determine winner
             if (killer.IsAlive)
             {
-                Console.WriteLine($"{killer.name} wins!");
+                Console.WriteLine($"{killer.Name} wins!");
                 killer.HighlanderKill();
 
-                dbManager.RecordKill(killer.ID, victim.ID); // Log the kill in the database
+                //dbManager.RecordKill(killer.ID, victim.ID); // Log the kill in the database
                 return true;
             }
             else
             {
-                Console.WriteLine($"{victim.name} wins!");
+                Console.WriteLine($"{victim.Name} wins!");
                 victim.HighlanderKill();
-                dbManager.RecordKill(victim.ID, killer.ID); // Log the kill in the database
+                //dbManager.RecordKill(victim.ID, killer.ID); // Log the kill in the database
                 return false;
             }
         }
@@ -121,7 +121,7 @@ namespace HighlanderMovements
             if (setPrevCoordPace)
             {
                 prevX = X;
-                prevY = Y;
+                PrevY = Y;
             }
         }
 
@@ -164,50 +164,50 @@ namespace HighlanderMovements
         public void revertPosition()
         {
             this.X = prevX; 
-            this.Y = prevY;
+            this.Y = PrevY;
         }
 
-        public void MoveUp() {
-            OnMove();
-            Y++;
-            this.setPrevCoordPace = true;
-        }
-        public void MoveDown() { 
-            OnMove();
-            Y--; 
-            this.setPrevCoordPace = true;
-        }
-        public void MoveLeft() { 
-            OnMove();
-            X--;
-            this.setPrevCoordPace = true;
-        }
+        //public void MoveUp() {
+        //    OnMove();
+        //    Y++;
+        //    this.setPrevCoordPace = true;
+        //}
+        //public void MoveDown() { 
+        //    OnMove();
+        //    Y--; 
+        //    this.setPrevCoordPace = true;
+        //}
+        //public void MoveLeft() { 
+        //    OnMove();
+        //    X--;
+        //    this.setPrevCoordPace = true;
+        //}
 
-        public void MoveRight() {
-            OnMove();
-            X++; 
-            this.setPrevCoordPace = true;
-        }
-        public void MoveDownRight() { 
-            OnMove();
-            X++; Y--; 
-            this.setPrevCoordPace = true;
-        }
-        public void MoveDownLeft() {
-            OnMove();
-            X--; Y--; 
-            this.setPrevCoordPace = true;
-        }
-        public void MoveUpRight() { 
-            OnMove();
-            X++; Y++;
-            this.setPrevCoordPace = true;
-        }
-        public void MoveUpLeft() { 
-            OnMove();
-            X--; Y++;
-            this.setPrevCoordPace = true;
-        }
+        //public void MoveRight() {
+        //    OnMove();
+        //    X++; 
+        //    this.setPrevCoordPace = true;
+        //}
+        //public void MoveDownRight() { 
+        //    OnMove();
+        //    X++; Y--; 
+        //    this.setPrevCoordPace = true;
+        //}
+        //public void MoveDownLeft() {
+        //    OnMove();
+        //    X--; Y--; 
+        //    this.setPrevCoordPace = true;
+        //}
+        //public void MoveUpRight() { 
+        //    OnMove();
+        //    X++; Y++;
+        //    this.setPrevCoordPace = true;
+        //}
+        //public void MoveUpLeft() { 
+        //    OnMove();
+        //    X--; Y++;
+        //    this.setPrevCoordPace = true;
+        //}
 
         // routine to run every "turn"
         public void routine(string[,] area)
@@ -259,7 +259,7 @@ namespace HighlanderMovements
                 
             }
 
-            this.validateNewPosition(area.GetLength(0), area.GetLength(1));
+            this.ValidateNewPosition(area.GetLength(0), area.GetLength(1));
 
 
             
@@ -309,43 +309,43 @@ namespace HighlanderMovements
                 return info;
         }
 
-        public static bool fight(Highlander p1, Highlander p2)
-        {
-            Console.WriteLine("Fight!");
-            // return result: true, p1 won, 
-            // false, p2 won
+        //public static bool fight(Highlander p1, Highlander p2)
+        //{
+        //    Console.WriteLine("Fight!");
+        //    // return result: true, p1 won, 
+        //    // false, p2 won
 
-            Random rand = new Random();
+        //    Random rand = new Random();
 
-            if (p1.Power > p2.Power)
-            {
-                Console.WriteLine("P1 wins!");
-                p1.HighlanderKill();
-                return true;
-            }
-            else if (p1.Power < p2.Power)
-            {
-                Console.WriteLine("P2 wins!");
-                p2.HighlanderKill();
-                return false;   
-            } 
-            else
-            {
-                int result = rand.Next(0,2);
-                if (result == 0)
-                {
-                    Console.WriteLine("P2 wins!");
-                    p2.HighlanderKill();
-                    return false;
-                }
-                else
-                {
-                    Console.WriteLine("P1 wins!");
-                    p1.HighlanderKill();
-                    return true;
-                }
-            }
-        }
+        //    if (p1.Power > p2.Power)
+        //    {
+        //        Console.WriteLine("P1 wins!");
+        //        p1.HighlanderKill();
+        //        return true;
+        //    }
+        //    else if (p1.Power < p2.Power)
+        //    {
+        //        Console.WriteLine("P2 wins!");
+        //        p2.HighlanderKill();
+        //        return false;   
+        //    } 
+        //    else
+        //    {
+        //        int result = rand.Next(0,2);
+        //        if (result == 0)
+        //        {
+        //            Console.WriteLine("P2 wins!");
+        //            p2.HighlanderKill();
+        //            return false;
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine("P1 wins!");
+        //            p1.HighlanderKill();
+        //            return true;
+        //        }
+        //    }
+        //}
         
     }
 }

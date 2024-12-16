@@ -4,3 +4,7 @@ C:\Users\teren\csharp_group_proj\Highlander DB\obj\Debug\HighlanderDB.csproj.Ass
 C:\Users\teren\csharp_group_proj\Highlander DB\obj\Debug\HighlanderDB.csproj.CoreCompileInputs.cache
 C:\Users\teren\csharp_group_proj\Highlander DB\obj\Debug\Highlander DB.dll
 C:\Users\teren\csharp_group_proj\Highlander DB\obj\Debug\Highlander DB.pdb
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Highlander DB\obj\Debug\HighlanderDB.csproj.AssemblyReference.cache
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Highlander DB\obj\Debug\HighlanderDB.csproj.CoreCompileInputs.cache
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Highlander DB\obj\Debug\Highlander DB.dll
+C:\Users\emwcu\source\repos\GroupProjectCSharp\Highlander DB\obj\Debug\Highlander DB.pdb

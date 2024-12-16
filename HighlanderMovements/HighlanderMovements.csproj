@@ -45,11 +45,5 @@
     <Compile Include="Highlander.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Highlander DB\HighlanderDB.csproj">
-      <Project>{13d7040b-b7b4-4e81-8a79-d5ca4e01b5b7}</Project>
-      <Name>HighlanderDB</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

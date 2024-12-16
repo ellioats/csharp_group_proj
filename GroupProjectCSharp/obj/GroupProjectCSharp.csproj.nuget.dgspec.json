@@ -129,21 +129,6 @@
         }
       }
     },
-    "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Highlander DB\\HighlanderDB.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Highlander DB\\HighlanderDB.csproj",
-        "projectName": "HighlanderDB",
-        "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Highlander DB\\HighlanderDB.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
     "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj": {
       "restore": {
         "projectUniqueName": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj",
@@ -151,11 +136,7 @@
         "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\HighlanderMovements\\HighlanderMovements.csproj",
         "frameworks": {
           "net472": {
-            "projectReferences": {
-              "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Highlander DB\\HighlanderDB.csproj": {
-                "projectPath": "C:\\Users\\emwcu\\source\\repos\\GroupProjectCSharp\\Highlander DB\\HighlanderDB.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         }
       },

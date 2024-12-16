@@ -41,7 +41,18 @@
           }
         }
       },
+      "HighlanderDB/1.0.0": {
+        "runtime": {
+          "Highlander DB.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": ""
+          }
+        }
+      },
       "HighlanderMovements/1.0.0": {
+        "dependencies": {
+          "HighlanderDB": "1.0.0"
+        },
         "runtime": {
           "HighlanderMovements.dll": {
             "assemblyVersion": "1.0.0",
@@ -71,6 +82,11 @@
       "sha512": ""
     },
     "Game/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HighlanderDB/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -137,31 +137,45 @@ namespace Game
                     if (this.grid[x,y].isOccupied)
                     {
                         PlayerTile temp = (PlayerTile) this.grid[x, y];
+
+                        if (temp.getPlayer() == null)
+                            continue;
+
+                        Console.WriteLine("\n\nPLAYER {0} VALIDATION\n\n", temp.getPlayer().Name);
+
+
+
                         // checks to make sure object is in correct space 
                         if (x != temp.getPlayer().X || y != temp.getPlayer().Y)
                         {
-                            Console.WriteLine("{0}'s position is not valid...", temp.getPlayer().Name);
-                            Console.WriteLine("Player current position is [{0}, {1}]", x, y);
-                            Console.WriteLine("Player position should be [{0}, {1}]", temp.getPlayer().X, temp.getPlayer().Y);
+                            //Console.WriteLine("{0}'s position is not valid...", temp.getPlayer().Name);
+                            //Console.WriteLine("Player current position is [{0}, {1}]", x, y);
+                            //Console.WriteLine("Player position should be [{0}, {1}]", temp.getPlayer().X, temp.getPlayer().Y);
+
+                            Console.WriteLine("");
 
                             // debug
-                            if ((grid[x ,y] as PlayerTile).getPlayer() != null)
-                            {
-                                Console.WriteLine("Player detected at location: [{0}, {1}]", x, y);
-                            }
+                            //if ((grid[x ,y] as PlayerTile).getPlayer() != null)
+                            //{
+                            //    Console.WriteLine("Player detected at location: [{0}, {1}]", x, y);
+                            //}
 
 
                             // if prospected position of temp has no player
                             if ((grid[temp.getPlayer().X, temp.getPlayer().Y] as PlayerTile) == null)
                             {
                                 Console.WriteLine("Prospected Position of [{0},{1}] does not contain player...", temp.getPlayer().X, temp.getPlayer().Y);
-                                Console.WriteLine("Resetting position to new location");
+                                Console.WriteLine("{0} new position: [{1}, {2}] -> [{3}, {4}]", temp.getPlayer().Name, x, y, temp.getPlayer().X, temp.getPlayer().Y);
                                 this.ResetPlayerPosition(temp.getPlayer(), x, y);   
                             } 
 
                             // 
-                            else
+                            else 
                             {
+
+                                // verify that defending player is not null
+                                if (grid[temp.getPlayer().X, temp.getPlayer().Y] == null)
+                                    continue;
 
                                 //Console.WriteLine("Collision occured. Fight should begin here...");
 
@@ -175,6 +189,8 @@ namespace Game
                                 Console.WriteLine("\nDefending player data");
                                 PrintDataAtLoc(temp.getPlayer().X, temp.getPlayer().Y);
 
+                                Console.WriteLine("player exists at location");
+
                                 // unused
                                 //int defendingPlayerPower = (grid[x, y] as PlayerTile).getPlayer().Power;
                                 //int attackingPlayerPower = (grid[temp.getPlayer().X, temp.getPlayer().Y] as PlayerTile).getPlayer().Power;
@@ -184,7 +200,7 @@ namespace Game
 
                                 //Console.WriteLine("Player {0} is fighting player {1}...", temp.getPlayer(), (grid[x,y] as PlayerTile).getPlayer());
 
-                                Console.WriteLine("Player {0} is fighting player {1}...", temp.getPlayer().Name, (grid[temp.getPlayer().X, temp.getPlayer().Y] as PlayerTile).getPlayer().Name);
+                                //Console.WriteLine("Player {0} is fighting player {1}...", temp.getPlayer().Name, (grid[temp.getPlayer().X, temp.getPlayer().Y] as PlayerTile).getPlayer().Name);
 
                                 HighlanderMovements.Highlander winner = (fight(temp.getPlayer(), (grid[temp.getPlayer().X, temp.getPlayer().Y] as PlayerTile).getPlayer()));
                                 
@@ -299,7 +315,8 @@ namespace Game
 
         public void ClearCoordinate(int x, int y)
         {
-            Console.WriteLine("Resetting coordinate [{0}, {1}]", x, y);
+            //Console.WriteLine("Resetting coordinate [{0}, {1}]", x, y);
+            Console.WriteLine("Clearing coordinate occupied by {0}", (grid[x,y] as PlayerTile).getPlayer().Name);
 
             grid[x,y].setStatus("empty");
             grid[x,y].isOccupied = false;
