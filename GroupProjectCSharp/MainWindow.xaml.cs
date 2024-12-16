@@ -1,139 +1,85 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
-using System.Windows.Threading;
-using Simulation;
+using HighlanderMovements;
 
-namespace ArrayTraveler
+namespace GroupProjectCSharp
 {
     public partial class MainWindow : Window
     {
-        private DispatcherTimer timer = new DispatcherTimer();
-        private Simulation.Simulation simulation;
-        private int width;
-        private int height;
-        private Random random = new Random();
+        private Grid gameGrid;
 
-        public MainWindow(int number1, int number2, int goodHighlanders, int badHighlanders)
+        public MainWindow(int width, int height, int goodHighlanders, int badHighlanders)
         {
             InitializeComponent();
-            width = number1;
-            height = number2;
-            InitializeSimulation(goodHighlanders, badHighlanders);
-            PopulateGrid();
+            InitializeGame(width, height, goodHighlanders, badHighlanders);
         }
 
-        private void InitializeSimulation(int goodHighlanders, int badHighlanders)
+        private void InitializeGame(int width, int height, int goodHighlanders, int badHighlanders)
         {
-            simulation = new Simulation.Simulation(0, 0, width, height, Log);
+            gameGrid = new Grid(width, height);
+            gameGrid.initGrid();
+
+            List<Highlander> players = new List<Highlander>();
+            Random rand = new Random();
 
             for (int i = 0; i < goodHighlanders; i++)
             {
-                simulation.AddHighlander(random.Next(width), random.Next(height), true);
+                int[] coords = gameGrid.getRandomXY();
+                players.Add(new Highlander(coords[0], coords[1], true));
             }
 
             for (int i = 0; i < badHighlanders; i++)
             {
-                simulation.AddHighlander(random.Next(width), random.Next(height), false);
+                int[] coords = gameGrid.getRandomXY();
+                players.Add(new Highlander(coords[0], coords[1], false));
             }
 
-            timer.Interval = TimeSpan.FromSeconds(1);
-            timer.Tick += Timer_Tick;
+            gameGrid.setPlayerList(players);
+
+            foreach (var player in players)
+            {
+                gameGrid.placePlayer(player);
+            }
+
+            UpdateGridView();
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void UpdateGridView()
         {
-            if (!simulation.AreAllBadHighlandersDefeated())
+            GameGrid.Columns.Clear();
+            for (int i = 0; i < gameGrid.width; i++)
             {
-                simulation.MovePlayerRandomly();
-                for (int i = 0; i < simulation.HighlandersCount; i++)
+                GameGrid.Columns.Add(new DataGridTextColumn
                 {
-                    simulation.MoveHighlanderRandomly(i);
-                }
-                UpdateGrid();
-            }
-            else
-            {
-                timer.Stop();
-                Log("All bad Highlanders defeated!");
-            }
-        }
-
-        private void PopulateGrid()
-        {
-            ArrayGrid.RowDefinitions.Clear();
-            ArrayGrid.ColumnDefinitions.Clear();
-            ArrayGrid.Children.Clear();
-
-            for (int i = 0; i < height; i++)
-            {
-                ArrayGrid.RowDefinitions.Add(new RowDefinition());
-            }
-            for (int j = 0; j < width; j++)
-            {
-                ArrayGrid.ColumnDefinitions.Add(new ColumnDefinition());
+                    Header = $"Column {i + 1}",
+                    Binding = new System.Windows.Data.Binding($"[{i}]")
+                });
             }
 
-            UpdateGrid();
-        }
-
-        private void UpdateGrid()
-        {
-            ArrayGrid.Children.Clear();
-
-            for (int i = 0; i < height; i++)
+            var gridData = new List<string[]>();
+            for (int j = 0; j < gameGrid.height; j++)
             {
-                for (int j = 0; j < width; j++)
+                var row = new string[gameGrid.width];
+                for (int i = 0; i < gameGrid.width; i++)
                 {
-                    var cellContent = GetCellContent(i, j);
-                    var cellBorder = new Border
-                    {
-                        BorderBrush = Brushes.Black,
-                        BorderThickness = new Thickness(1),
-                        Child = new TextBlock
-                        {
-                            Text = cellContent,
-                            HorizontalAlignment = HorizontalAlignment.Center,
-                            VerticalAlignment = VerticalAlignment.Center
-                        }
-                    };
-                    Grid.SetRow(cellBorder, i);
-                    Grid.SetColumn(cellBorder, j);
-                    ArrayGrid.Children.Add(cellBorder);
+                    row[i] = gameGrid.getGrid()[i, j];
                 }
+                gridData.Add(row);
             }
+
+            GameGrid.ItemsSource = gridData;
         }
 
-        private string GetCellContent(int x, int y)
+        private void MovePlayers_Click(object sender, RoutedEventArgs e)
         {
-            var playerPosition = simulation.GetPlayerPosition();
-            if (playerPosition == (x, y))
+            foreach (var player in gameGrid.getCurrentPlayers())
             {
-                return "P";
+                player.MoveRandomly(gameGrid.width, gameGrid.height);
             }
-
-            for (int i = 0; i < simulation.HighlandersCount; i++)
-            {
-                var highlander = simulation.GetHighlander(i);
-                if (highlander.X == x && highlander.Y == y)
-                {
-                    return highlander.IsGood ? "G" : "B";
-                }
-            }
-
-            return string.Empty;
-        }
-
-        private void StartSimulationButton_Click(object sender, RoutedEventArgs e)
-        {
-            timer.Start();
-        }
-
-        private void Log(string message)
-        {
-            LogTextBox.AppendText(message + Environment.NewLine);
-            LogTextBox.ScrollToEnd();
+            gameGrid.gridUpdate();
+            UpdateGridView();
         }
     }
 }

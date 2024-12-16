@@ -27,7 +27,7 @@ namespace ConsoleTester
         // goal: to have grid print and show player on grid
         public static void gridPrintTestWithPlayer()
         {
-            Highlander player = new Highlander(5,5,true, "test");
+            Highlander player = new Highlander(5,5,true);
 
             const int width = 10;
             const int height = 10;
@@ -41,7 +41,7 @@ namespace ConsoleTester
         
         public static void gridPlayerMoveTest()
         {
-            Highlander player = new Highlander(5, 5, true, "test");
+            Highlander player = new Highlander(5, 5, true);
 
             const int width = 10;
             const int height = 10;
@@ -66,7 +66,7 @@ namespace ConsoleTester
 
         public static void gridPlayerRandomMoveTest()
         {
-            Highlander player = new Highlander(5, 5, true, "test");
+            Highlander player = new Highlander(5, 5, true);
 
             const int width = 10;
             const int height = 10;
@@ -94,8 +94,8 @@ namespace ConsoleTester
         public static void twoPlayerCollisionTestUnMoving()
         {
 
-            Highlander player1 = new Highlander(1,1, true, "Wowie Zowie");
-            Highlander player2 = new Highlander(0, 1, false, "Womper chomper");
+            Highlander player1 = new Highlander(1,1, true);
+            Highlander player2 = new Highlander(0, 1, false);
 
             const int width = 10;
             const int height = 10;
@@ -125,8 +125,8 @@ namespace ConsoleTester
         public static void GridPlayerPrintTest()
         {
 
-            Highlander player1 = new Highlander(1,1, true, "");
-            Highlander player2 = new Highlander(5, 6, true, "");
+            Highlander player1 = new Highlander(1,1, true);
+            Highlander player2 = new Highlander(5, 6, true);
 
             const int width = 10;
             const int height = 10;
@@ -144,7 +144,7 @@ namespace ConsoleTester
 
         public static void GridPlayerRemoveTest()
         {
-            Highlander p = new Highlander(0, 0, true, "silly");
+            Highlander p = new Highlander(0, 0, true);
 
 
             const int width = 10;
@@ -168,8 +168,8 @@ namespace ConsoleTester
 
         public static void PlayerFightTest2()
         {
-            Highlander player1 = new Highlander(1,1, true, "");
-            Highlander player2 = new Highlander(5, 6, true, "");
+            Highlander player1 = new Highlander(1,1, true);
+            Highlander player2 = new Highlander(5, 6, true);
 
             const int width = 10;
             const int height = 10;
@@ -192,8 +192,8 @@ namespace ConsoleTester
             int[] p1Coords = g.getRandomXY(); 
             int[] p2Coords = g.getRandomXY(); 
 
-            Highlander p1 = new Highlander(p1Coords[0], p1Coords[1], true, "P1");
-            Highlander p2 = new Highlander(p2Coords[0], p2Coords[1], true, "P2");
+            Highlander p1 = new Highlander(p1Coords[0], p1Coords[1], true);
+            Highlander p2 = new Highlander(p2Coords[0], p2Coords[1], true);
 
             g.PlacePlayer(p1);
             g.PlacePlayer(p2);

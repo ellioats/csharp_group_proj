@@ -1,5 +1,4 @@
-﻿using ArrayTraveler;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 
 namespace GroupProjectCSharp

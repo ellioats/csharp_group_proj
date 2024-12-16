@@ -18,10 +18,8 @@ C:\Users\teren\csharp_group_proj\HighlanderMovements\obj\Debug\HighlanderMovemen
 C:\Users\teren\csharp_group_proj\HighlanderMovements\obj\Debug\HighlanderMovements.csproj.CoreCompileInputs.cache
 C:\Users\teren\csharp_group_proj\HighlanderMovements\obj\Debug\HighlanderMovements.dll
 C:\Users\teren\csharp_group_proj\HighlanderMovements\obj\Debug\HighlanderMovements.pdb
-<<<<<<< HEAD
 C:\Users\teren\csharp_group_proj\HighlanderMovements\bin\Debug\Highlander DB.dll
 C:\Users\teren\csharp_group_proj\HighlanderMovements\bin\Debug\Highlander DB.pdb
 C:\Users\teren\csharp_group_proj\HighlanderMovements\obj\Debug\Highland.A42A3EDE.Up2Date
-=======
 >>>>>>> d6bdba949408eef0bd2b1a6c0c7c1115f6320b75
 >>>>>>> a8bc5a18e9a71da0862ee15c642f3788d073011d
